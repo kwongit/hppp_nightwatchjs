@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="10">
+
+  <testsuite name="hppp.validation.error_validations"
+    errors="0" failures="0" hostname="" id="" package="validation" skipped="0"
+    tests="10" time="17.45" timestamp="Mon, 27 Mar 2017 23:13:30 GMT">
+  
+    <testcase name="[00] - Debugging | https://hotpads.com/user/edit-listing/1603681" classname="hppp.validation.error_validations" time="5.213" assertions="0">
+    </testcase>
+  
+    <testcase name="[01] - Enter email:" classname="hppp.validation.error_validations" time="1.518" assertions="0">
+    </testcase>
+  
+    <testcase name="[02] - Enter password:" classname="hppp.validation.error_validations" time="1.309" assertions="0">
+    </testcase>
+  
+    <testcase name="[03] - Save button should be disabled" classname="hppp.validation.error_validations" time="3.561" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[04] - Post a listing: Details and Description" classname="hppp.validation.error_validations" time="0.4670" assertions="0">
+    </testcase>
+  
+    <testcase name="[05] - Post a listing: Contact Information" classname="hppp.validation.error_validations" time="0.3160" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[06] - Post a listing: Photos" classname="hppp.validation.error_validations" time="1.138" assertions="0">
+    </testcase>
+  
+    <testcase name="[07] - Save button should be enabled" classname="hppp.validation.error_validations" time="1.043" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[08] - Clicking on Activate should throw errors" classname="hppp.validation.error_validations" time="1.161" assertions="0">
+    </testcase>
+  
+    <testcase name="[09] - Show errors | Missing required fields:" classname="hppp.validation.error_validations" time="1.720" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

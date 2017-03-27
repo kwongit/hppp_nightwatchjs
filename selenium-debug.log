@@ -1,0 +1,142 @@
+16:13:30.688 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
+16:13:30.689 INFO - Launching a standalone Selenium Server
+2017-03-27 16:13:30.710:INFO::main: Logging initialized @270ms to org.seleniumhq.jetty9.util.log.StdErrLog
+16:13:30.776 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+16:13:30.776 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+16:13:30.776 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+16:13:30.776 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+16:13:30.777 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+16:13:30.777 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-03-27 16:13:30.830:INFO:osjs.Server:main: jetty-9.2.20.v20161216
+2017-03-27 16:13:30.874:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@604ed9f0{/,null,AVAILABLE}
+2017-03-27 16:13:30.909:INFO:osjs.AbstractConnector:main: Started ServerConnector@5700d6b1{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-03-27 16:13:30.910:INFO:osjs.Server:main: Started @470ms
+16:13:30.910 INFO - Selenium Server is up and running
+16:13:31.178 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+16:13:31.206 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Hppp / Validation / Error Validations, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+16:13:31.222 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Hppp / Validation / Error Validations, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f) on port 10339
+Only local connections are allowed.
+16:13:32.482 INFO - Detected dialect: OSS
+16:13:32.511 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Hppp / Validation / Error Validations, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+16:13:32.539 INFO - Executing: [get: https://hotpads.com/user/edit-listing/1603681])
+16:13:35.204 INFO - Done: [get: https://hotpads.com/user/edit-listing/1603681]
+16:13:36.236 INFO - Executing: [find element: By.cssSelector: input[name=email]])
+16:13:36.286 INFO - Done: [find element: By.cssSelector: input[name=email]]
+16:13:36.310 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, z, i, l, l, o, w, g, r, o, u, p, ., c, o, m]])
+16:13:36.600 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, z, i, l, l, o, w, g, r, o, u, p, ., c, o, m]]
+16:13:36.609 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
+16:13:36.638 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
+16:13:36.644 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Continue")]]])
+16:13:36.731 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Continue")]]]
+16:13:37.751 INFO - Executing: [find element: By.cssSelector: input[name=password]])
+16:13:37.780 INFO - Done: [find element: By.cssSelector: input[name=password]]
+16:13:37.788 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=password]], [Z, i, l, l, o, w, 1, 2, 3, !]])
+16:13:37.928 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=password]], [Z, i, l, l, o, w, 1, 2, 3, !]]
+16:13:37.936 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Sign in")]])
+16:13:37.963 INFO - Done: [find element: By.xpath: //button[contains(text(), "Sign in")]]
+16:13:37.968 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Sign in")]]])
+16:13:38.038 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Sign in")]]]
+16:13:41.061 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Save listing")]])
+16:13:41.095 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Save listing")]]
+16:13:41.103 INFO - Executing: [is enabled: 4 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Save listing")]]])
+16:13:41.121 INFO - Done: [is enabled: 4 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Save listing")]]]
+16:13:42.130 INFO - Executing: [find element: By.cssSelector: input[name=street]])
+16:13:42.160 INFO - Done: [find element: By.cssSelector: input[name=street]]
+16:13:42.167 INFO - Executing: [send keys: 5 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=street]], []])
+16:13:42.227 INFO - Done: [send keys: 5 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=street]], []]
+16:13:42.236 INFO - Executing: [find element: By.cssSelector: input[name=city]])
+16:13:42.261 INFO - Done: [find element: By.cssSelector: input[name=city]]
+16:13:42.268 INFO - Executing: [send keys: 6 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=city]], []])
+16:13:42.330 INFO - Done: [send keys: 6 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=city]], []]
+16:13:42.341 INFO - Executing: [find element: By.cssSelector: select[name=state]])
+16:13:42.371 INFO - Done: [find element: By.cssSelector: select[name=state]]
+16:13:42.377 INFO - Executing: [send keys: 7 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: select[name=state]], []])
+16:13:42.454 INFO - Done: [send keys: 7 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: select[name=state]], []]
+16:13:42.461 INFO - Executing: [find element: By.cssSelector: input[name=zip]])
+16:13:42.489 INFO - Done: [find element: By.cssSelector: input[name=zip]]
+16:13:42.520 INFO - Executing: [send keys: 8 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=zip]], []])
+16:13:42.604 INFO - Done: [send keys: 8 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=zip]], []]
+16:13:42.615 INFO - Executing: [find element: By.cssSelector: input[name=price]])
+16:13:42.643 INFO - Done: [find element: By.cssSelector: input[name=price]]
+16:13:42.652 INFO - Executing: [send keys: 9 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=price]], []])
+16:13:42.728 INFO - Done: [send keys: 9 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=price]], []]
+16:13:42.736 INFO - Executing: [find element: By.cssSelector: select[name=beds]])
+16:13:42.768 INFO - Done: [find element: By.cssSelector: select[name=beds]]
+16:13:42.774 INFO - Executing: [send keys: 10 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: select[name=beds]], []])
+16:13:42.857 INFO - Done: [send keys: 10 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: select[name=beds]], []]
+16:13:42.866 INFO - Executing: [find element: By.cssSelector: input[name=baths]])
+16:13:42.895 INFO - Done: [find element: By.cssSelector: input[name=baths]]
+16:13:42.903 INFO - Executing: [send keys: 11 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=baths]], []])
+16:13:42.967 INFO - Done: [send keys: 11 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=baths]], []]
+16:13:42.976 INFO - Executing: [find element: By.cssSelector: textarea[name=description]])
+16:13:43.004 INFO - Done: [find element: By.cssSelector: textarea[name=description]]
+16:13:43.009 INFO - Executing: [send keys: 12 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: textarea[name=description]], []])
+16:13:43.073 INFO - Done: [send keys: 12 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: textarea[name=description]], []]
+16:13:43.088 INFO - Executing: [find element: By.cssSelector: input[name=contactName]])
+16:13:43.122 INFO - Done: [find element: By.cssSelector: input[name=contactName]]
+16:13:43.129 INFO - Executing: [send keys: 13 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=contactName]], []])
+16:13:43.207 INFO - Done: [send keys: 13 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=contactName]], []]
+16:13:43.215 INFO - Executing: [find element: By.cssSelector: input[name=contactPhone]])
+16:13:43.245 INFO - Done: [find element: By.cssSelector: input[name=contactPhone]]
+16:13:43.252 INFO - Executing: [send keys: 14 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=contactPhone]], []])
+16:13:43.321 INFO - Done: [send keys: 14 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=contactPhone]], []]
+16:13:43.327 INFO - Executing: [find elements: By.cssSelector: input[name=contactEmail]])
+16:13:43.364 INFO - Done: [find elements: By.cssSelector: input[name=contactEmail]]
+16:13:43.372 INFO - Executing: [get element attribute: 15 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=contactEmail]], value])
+16:13:43.388 INFO - Done: [get element attribute: 15 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[name=contactEmail]], value]
+16:13:43.403 INFO - Executing: [find element: By.cssSelector: input[type=file]])
+16:13:43.436 INFO - Done: [find element: By.cssSelector: input[type=file]]
+16:13:43.442 INFO - Executing: [send keys: 16 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[type=file]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, f, a, i, l, ., j, p, g]])
+16:13:43.525 INFO - Done: [send keys: 16 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> css selector: input[type=file]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, f, a, i, l, ., j, p, g]]
+16:13:44.538 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Save listing")]])
+16:13:44.555 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Save listing")]]
+16:13:44.559 INFO - Executing: [is enabled: 4 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Save listing")]]])
+16:13:44.571 INFO - Done: [is enabled: 4 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Save listing")]]]
+16:13:45.581 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Activate listing")]])
+16:13:45.604 INFO - Done: [find element: By.xpath: //button[contains(text(), "Activate listing")]]
+16:13:45.608 INFO - Executing: [click: 17 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Activate listing")]]])
+16:13:45.729 INFO - Done: [click: 17 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //button[contains(text(), "Activate listing")]]]
+16:13:46.748 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your street address.")]])
+16:13:46.776 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your street address.")]]
+16:13:46.782 INFO - Executing: [is displayed: 18 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your street address.")]]])
+16:13:46.810 INFO - Done: [is displayed: 18 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your street address.")]]]
+16:13:46.818 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your city.")]])
+16:13:46.843 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your city.")]]
+16:13:46.850 INFO - Executing: [is displayed: 19 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your city.")]]])
+16:13:46.878 INFO - Done: [is displayed: 19 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your city.")]]]
+16:13:46.885 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your state.")]])
+16:13:46.912 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your state.")]]
+16:13:46.918 INFO - Executing: [is displayed: 20 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your state.")]]])
+16:13:46.948 INFO - Done: [is displayed: 20 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your state.")]]]
+16:13:46.954 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your zip code.")]])
+16:13:46.980 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your zip code.")]]
+16:13:46.985 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your zip code.")]]])
+16:13:47.016 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter your zip code.")]]]
+16:13:47.023 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter the number of bedrooms")]])
+16:13:47.047 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter the number of bedrooms")]]
+16:13:47.052 INFO - Executing: [is displayed: 22 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter the number of bedrooms")]]])
+16:13:47.081 INFO - Done: [is displayed: 22 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter the number of bedrooms")]]]
+16:13:47.087 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter the number of bathrooms")]])
+16:13:47.111 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter the number of bathrooms")]]
+16:13:47.118 INFO - Executing: [is displayed: 23 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter the number of bathrooms")]]])
+16:13:47.148 INFO - Done: [is displayed: 23 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter the number of bathrooms")]]]
+16:13:47.154 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please provide a description.")]])
+16:13:47.186 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please provide a description.")]]
+16:13:47.190 INFO - Executing: [is displayed: 24 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please provide a description.")]]])
+16:13:47.216 INFO - Done: [is displayed: 24 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please provide a description.")]]]
+16:13:47.223 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter a valid 10 digit phone number.")]])
+16:13:47.259 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter a valid 10 digit phone number.")]]
+16:13:47.265 INFO - Executing: [is displayed: 25 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter a valid 10 digit phone number.")]]])
+16:13:47.296 INFO - Done: [is displayed: 25 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //span[contains(text(), "Please enter a valid 10 digit phone number.")]]]
+16:13:47.302 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]])
+16:13:47.336 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]]
+16:13:47.342 INFO - Executing: [is displayed: 26 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]]])
+16:13:47.375 INFO - Done: [is displayed: 26 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]]]
+16:13:47.381 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "An error occurred!")]])
+16:13:47.412 INFO - Done: [find elements: By.xpath: //div[contains(text(), "An error occurred!")]]
+16:13:47.418 INFO - Executing: [is displayed: 27 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //div[contains(text(), "An error occurred!")]]])
+16:13:47.452 INFO - Done: [is displayed: 27 [[ChromeDriver: chrome on MAC (d46000f2825e02f72561caf310c7b15f)] -> xpath: //div[contains(text(), "An error occurred!")]]]
