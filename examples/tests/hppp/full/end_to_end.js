@@ -55,8 +55,6 @@ module.exports = {
     var info = client.page.hp.posting_info();
     info.contact_info();
 
-    client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@zillowgroup.com');
-
     var phone = client.page.hp.verify_phone();
     phone.expect.element('@sms').to.be.visible;
     phone.expect.element('@phonecall').to.be.visible;

@@ -1,6 +1,6 @@
 /* jshint expr: true */
 module.exports = {
-  '[00] - Debugging | https://hotpads.com/user/edit-listing/1603681' : function (client) {
+  '[00] - Edit Listing | https://hotpads.com/user/edit-listing/1603681' : function (client) {
     client
       .url('https://hotpads.com/user/edit-listing/1603681')
       .pause(1000);
@@ -55,13 +55,14 @@ module.exports = {
 
   '[08] - Clicking on Activate should throw errors' : function (client) {
     var activate = client.page.hp.validation.blank_posting_info();
+    activate.expect.element('@active').to.be.enabled;
     activate.click('@active');
     client.pause(1000);
   },
 
   '[09] - Show errors | Missing required fields:' : function (client) {
     var errors = client.page.hp.validation.blank_posting_info();
-    errors.expect.element('@no_street').to.be.visible;
+    errors.expect.element('@no_street').to.be.visible.before(3000);
     errors.expect.element('@no_city').to.be.visible;
     errors.expect.element('@no_state').to.be.visible;
     errors.expect.element('@no_zip').to.be.visible;
@@ -71,6 +72,5 @@ module.exports = {
     errors.expect.element('@no_phone').to.be.visible;
     errors.expect.element('@form_errors').to.be.visible;
     errors.expect.element('@error_occurred').to.be.visible;
-    client.pause(1000);
   },
 };

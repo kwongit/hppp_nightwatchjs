@@ -28,7 +28,7 @@ module.exports = {
     //form has errors
     form_errors: { selector: '//div[contains(text(), "Please fix any errors above before activating your listing.")]', locateStrategy: 'xpath' },
 
-    error_occurred: { selector: '//div[contains(text(), "An error occurred!")]', locateStrategy: 'xpath' },
+    error_occurred: { selector: '//div[contains(text(), "An error occurred.")]', locateStrategy: 'xpath' },
 
     no_street: { selector: '//span[contains(text(), "Please enter your street address.")]', locateStrategy: 'xpath' },
 
