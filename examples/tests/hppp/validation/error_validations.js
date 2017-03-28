@@ -57,6 +57,7 @@ module.exports = {
     var activate = client.page.hp.validation.blank_posting_info();
     activate.expect.element('@active').to.be.enabled;
     activate.click('@active');
+    activate.click('@active');
     client.pause(1000);
   },
 
