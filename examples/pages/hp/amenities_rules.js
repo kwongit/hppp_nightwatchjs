@@ -19,5 +19,5 @@ module.exports = {
     cats: { selector: '//span[contains(text(), "Cats ok")]', locateStrategy: 'xpath' },
     smalldogs: { selector: '//span[contains(text(), "Small dogs ok")]', locateStrategy: 'xpath' },
     largedogs: { selector: '//span[contains(text(), "Large dogs ok")]', locateStrategy: 'xpath' }
-  }
+  },
 };

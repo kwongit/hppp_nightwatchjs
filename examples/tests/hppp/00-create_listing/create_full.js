@@ -6,7 +6,6 @@ module.exports = {
       .pause(1000);
 
     var cta = client.page.hp.landing_page();
-    cta.expect.element('@post_a_listing_btn').to.be.visible;
     cta.click('@post_a_listing_btn');
     client.pause(1000);
   },
@@ -25,18 +24,12 @@ module.exports = {
 
   '[03] - Select your listing type:' : function (client) {
     var listings = client.page.hp.listing_type();
-    listings.expect.element('@forrent').to.be.visible;
-    listings.expect.element('@r4r').to.be.visible;
     listings.click('@forrent');
     client.pause(1000);
   },
 
   '[04] - Select your property type:' : function (client) {
     var types = client.page.hp.property_type();
-    types.expect.element('@house').to.be.visible;
-    types.expect.element('@townhouse').to.be.visible;
-    types.expect.element('@condo').to.be.visible;
-    types.expect.element('@apartment').to.be.visible;
     types.click('@townhouse');
     client.pause(3000);
   },
@@ -56,8 +49,6 @@ module.exports = {
     info.contact_info();
 
     var phone = client.page.hp.verify_phone();
-    phone.expect.element('@sms').to.be.visible;
-    phone.expect.element('@phonecall').to.be.visible;
     phone.click('@sms');
     client.pause(1000);
   },
@@ -70,22 +61,32 @@ module.exports = {
 
   '[09] - Post a listing: Amenities and Rules | Amenities' : function (client) {
     var amenities = client.page.hp.amenities_rules();
-    amenities.expect.element('@furnished').to.be.visible;
+    amenities.click('@furnished');
     amenities.click('@furnished');
     client.pause(1000);
   },
 
   '[10] - Post a listing: Amenities and Rules | Laundry' : function (client) {
     var laundry = client.page.hp.amenities_rules();
-    laundry.expect.element('@none').to.be.visible;
     laundry.click('@none');
     client.pause(1000);
   },
 
   '[11] - Post a listing: Amenities and Rules | Pets' : function (client) {
     var pets = client.page.hp.amenities_rules();
-    pets.expect.element('@nopetsallowed').to.be.visible;
     pets.click('@nopetsallowed');
     client.pause(1000);
+  },
+
+  '[12] - Now saving...' : function (client) {
+    var save_button = client.page.hp.posting_info();
+    save_button.click('@save');
+    client.pause(1000);
+  },
+
+  'Return \'{URL}\':' : function (client) {
+    client.url(function(result) {
+      console.log(result);
+    });
   },
 };
