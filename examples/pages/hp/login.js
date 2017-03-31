@@ -6,7 +6,7 @@ module.exports = {
 
     continue: { selector: '//button[contains(text(), "Continue")]', locateStrategy: 'xpath' },
 
-    signin: { selector: '//a[contains(text(), "Forgot your password?")]', locateStrategy: 'xpath' },
+    signin: { selector: '//button[contains(text(), "Sign in")]', locateStrategy: 'xpath' },
 
     forgot_password: { selector: '//a[contains(text(), "Forgot your password?")]', locateStrategy: 'xpath' },
 

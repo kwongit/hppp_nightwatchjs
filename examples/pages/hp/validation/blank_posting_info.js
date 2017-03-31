@@ -11,6 +11,8 @@ module.exports = {
     beds: { selector: 'select[name=beds]', locateStrategy: 'css' },
     baths: { selector: 'input[name=baths]', locateStrategy: 'css' },
     description: { selector: 'textarea[name=description]', locateStrategy: 'css' },
+    copy1: { selector: '//strong[contains(text(), "• Beds/baths")]', locateStrategy: 'xpath' },
+    copy2: { selector: '//strong[contains(text(), "• Square footage")]', locateStrategy: 'xpath' },
 
     //contact information
     name: { selector: 'input[name=contactName]', locateStrategy: 'css' },

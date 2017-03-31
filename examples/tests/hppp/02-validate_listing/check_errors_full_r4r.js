@@ -1,9 +1,14 @@
 /* jshint expr: true */
 module.exports = {
-  '[00] - Edit Listing | https://hotpads.com/user/edit-listing/1609833' : function (client) {
+  '[00] - Look for the CTA button: Post a listing' : function (client) {
     client
-      .url('https://hotpads.com/user/edit-listing/1609833')
+      .url('https://hotpads.com/')
       .pause(1000);
+
+    var cta = client.page.hp.landing_page();
+    cta.expect.element('@post_a_listing_btn').to.be.visible;
+    cta.click('@post_a_listing_btn');
+    client.pause(1000);
   },
 
   '[01] - Enter valid email:' : function (client) {
@@ -27,6 +32,29 @@ module.exports = {
     client.pause(1000);
   },
 
+  '[03] - Check for listing types: (2)' : function (client) {
+    var listings = client.page.hp.listing_type();
+    listings.expect.element('@posting').to.be.visible;
+    listings.expect.element('@select').to.be.visible;
+    listings.expect.element('@view').to.be.visible;
+    listings.expect.element('@forrent').to.be.visible;
+    listings.expect.element('@r4r').to.be.visible;
+    listings.click('@r4r');
+    client.pause(1000);
+  },
+
+  '[04] - Check for property types: (4)' : function (client) {
+    var types = client.page.hp.property_type();
+    types.expect.element('@house').to.be.visible;
+    types.expect.element('@townhouse').to.be.visible;
+    types.expect.element('@condo').to.be.visible;
+    types.expect.element('@posting').to.be.visible;
+    types.expect.element('@select').to.be.visible;
+    types.expect.element('@go_back').to.be.visible;
+    types.click('@house');
+    client.pause(3000);
+  },
+
   '[05] - Save button should be disabled' : function (client) {
     client.pause(2000);
 
@@ -46,9 +74,9 @@ module.exports = {
 
   '[07] - Post a listing: No Details and Description' : function (client) {
     var details = client.page.hp.validation.blank_posting_info();
+    details.details_description();
     details.expect.element('@copy1').to.be.visible;
     details.expect.element('@copy2').to.be.visible;
-    details.details_description();
     details.expect.element('@price').to.have.value.that.equals('');
     details.expect.element('@beds').to.have.value.that.equals('');
     details.expect.element('@baths').to.have.value.that.equals('');
@@ -96,6 +124,72 @@ module.exports = {
     errors.expect.element('@no_phone').to.be.visible;
     errors.expect.element('@form_errors').to.be.visible;
     errors.expect.element('@error_occurred').to.be.visible;
+  },
+
+  '[13] - Post a listing: Location' : function (client) {
+    var location = client.page.hp.posting_info();
+    location.location_address();
+    location.expect.element('@street').to.have.value.that.equals('33 Vista Rd');
+    location.expect.element('@city').to.have.value.that.equals('Alameda');
+    location.expect.element('@state').to.have.value.that.equals('CA');
+    location.expect.element('@zip').to.have.value.that.equals('94502');
+  },
+
+  '[14] - Post a listing: Details and Description' : function (client) {
+    var details = client.page.hp.posting_info();
+    details.details_description();
+    details.expect.element('@price').to.have.value.that.equals('$3500');
+    details.expect.element('@beds').to.have.value.that.equals('3');
+    details.expect.element('@baths').to.have.value.that.equals('2.5');
+    details.expect.element('@description').to.have.value.that.equals('This is an awesome place!');
+  },
+
+  '[15] - Post a listing: Contact Information' : function (client) {
+    var info = client.page.hp.posting_info();
+    info.contact_info();
+    info.expect.element('@name').to.have.value.that.equals('QA Test');
+    info.expect.element('@phone').to.have.value.that.equals('(415) 555-5555');
+
+    var phone = client.page.hp.verify_phone();
+    phone.expect.element('@sms').to.be.visible;
+    phone.expect.element('@phonecall').to.be.visible;
+    phone.click('@sms');
+    client.pause(1000);
+  },
+
+  '[16] - Post a listing: Photos' : function (client) {
+    var upload = client.page.hp.posting_info();
+    upload.upload_photo();
+    client.pause(1000);
+  },
+
+  '[17] - Post a listing: Amenities and Rules | Amenities' : function (client) {
+    var amenities = client.page.hp.amenities_rules();
+    amenities.expect.element('@furnished').to.be.visible;
+    amenities.click('@furnished');
+    amenities.click('@furnished');
+    client.pause(1000);
+  },
+
+  '[18] - Post a listing: Amenities and Rules | Laundry' : function (client) {
+    var laundry = client.page.hp.amenities_rules();
+    laundry.expect.element('@none').to.be.visible;
+    laundry.click('@none');
+    client.pause(1000);
+  },
+
+  '[19] - Post a listing: Amenities and Rules | Pets' : function (client) {
+    var pets = client.page.hp.amenities_rules();
+    pets.expect.element('@nopetsallowed').to.be.visible;
+    pets.click('@nopetsallowed');
+    client.pause(1000);
+  },
+
+  '[20] - Now saving...' : function (client) {
+    var save = client.page.hp.posting_info();
+    save.expect.element('@save').to.be.enabled;
+    save.click('@save');
+    client.pause(1000);
   },
 
   'Return \'{URL}\':' : function (client) {

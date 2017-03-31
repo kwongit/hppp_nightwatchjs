@@ -25,6 +25,7 @@ module.exports = {
     login.no_password();
     login.expect.element('@no_password').to.be.visible;
     login.bad_password();
+    client.pause(1000);
     login.expect.element('@bad_password').to.be.visible;
     login.password();
     login.expect.element('@passwordField').to.have.value.that.equals('test123');
@@ -33,6 +34,9 @@ module.exports = {
 
   '[03] - Check for listing types: (2)' : function (client) {
     var listings = client.page.hp.listing_type();
+    listings.expect.element('@posting').to.be.visible;
+    listings.expect.element('@select').to.be.visible;
+    listings.expect.element('@view').to.be.visible;
     listings.expect.element('@forrent').to.be.visible;
     listings.expect.element('@r4r').to.be.visible;
     listings.click('@forrent');

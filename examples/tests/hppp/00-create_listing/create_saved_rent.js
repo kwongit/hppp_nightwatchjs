@@ -22,13 +22,13 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[03] - Select your listing type:' : function (client) {
+  '[03] - Select your listing type: For rent' : function (client) {
     var listings = client.page.hp.listing_type();
     listings.click('@forrent');
     client.pause(1000);
   },
 
-  '[04] - Select your property type:' : function (client) {
+  '[04] - Select your property type: Townhouse' : function (client) {
     var types = client.page.hp.property_type();
     types.click('@townhouse');
     client.pause(3000);
