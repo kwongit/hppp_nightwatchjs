@@ -1,14 +1,9 @@
 /* jshint expr: true */
 module.exports = {
-  '[00] - Look for the CTA button: Post a listing' : function (client) {
+  '[00] - Sign in / register | https://hotpads.com/login' : function (client) {
     client
-      .url('https://hotpads.com/')
+      .url('https://hotpads.com/login')
       .pause(1000);
-
-    var cta = client.page.hp.landing_page();
-    cta.expect.element('@post_a_listing_btn').to.be.visible;
-    cta.click('@post_a_listing_btn');
-    client.pause(1000);
   },
 
   '[01] - Enter valid email:' : function (client) {
@@ -32,7 +27,20 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[03] - Check for listing types: (2)' : function (client) {
+  '[03] - Navigate to /rental-manager/' : function (client) {
+    client.url('https://hotpads.com/rental-manager/', function(result) {
+    var hello = client.page.hp.rental_manager();
+    hello.expect.element('@hello').to.be.present;
+    hello.expect.element('@post').to.be.present;
+    hello.expect.element('@listings').to.be.present;
+    hello.expect.element('@back').to.be.present;
+    hello.expect.element('@email').to.be.present;
+    hello.click('@post');
+    client.pause(1000);
+    });
+  },
+
+  '[04] - Check for listing types: (2)' : function (client) {
     var listings = client.page.hp.listing_type();
     listings.expect.element('@posting').to.be.visible;
     listings.expect.element('@select').to.be.visible;
@@ -43,27 +51,29 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[04] - Check for property types: (4)' : function (client) {
+  '[05] - Check for property types: (4)' : function (client) {
     var types = client.page.hp.property_type();
     types.expect.element('@house').to.be.visible;
     types.expect.element('@townhouse').to.be.visible;
     types.expect.element('@condo').to.be.visible;
-    types.expect.element('@posting').to.be.visible;
-    types.expect.element('@select').to.be.visible;
-    types.expect.element('@go_back').to.be.visible;
+    types.expect.element('@apartment').to.be.visible;
     types.click('@house');
     client.pause(3000);
   },
 
-  '[05] - Save button should be disabled' : function (client) {
-    client.pause(2000);
+  '[06] - Verify property type: house' : function (client) {
+    var type = client.page.hp.validation.blank_posting_info();
+    type.expect.element('@r4r').to.be.visible;
+    client.pause(1000);
+  },
 
+  '[07] - Save button should be disabled' : function (client) {
     var save = client.page.hp.validation.blank_posting_info();
     save.expect.element('@save').to.not.be.enabled;
     client.pause(1000);
   },
 
-  '[06] - Post a listing: No Location' : function (client) {
+  '[08] - Post a listing: No Location' : function (client) {
     var location = client.page.hp.validation.blank_posting_info();
     location.location_address();
     location.expect.element('@street').to.have.value.that.equals('');
@@ -72,18 +82,16 @@ module.exports = {
     location.expect.element('@zip').to.have.value.that.equals('');
   },
 
-  '[07] - Post a listing: No Details and Description' : function (client) {
+  '[09] - Post a listing: No Details and Description' : function (client) {
     var details = client.page.hp.validation.blank_posting_info();
     details.details_description();
-    details.expect.element('@copy1').to.be.visible;
-    details.expect.element('@copy2').to.be.visible;
     details.expect.element('@price').to.have.value.that.equals('');
     details.expect.element('@beds').to.have.value.that.equals('');
     details.expect.element('@baths').to.have.value.that.equals('');
     details.expect.element('@description').to.have.value.that.equals('');
   },
 
-  '[08] - Post a listing: No Contact Information' : function (client) {
+  '[10] - Post a listing: No Contact Information' : function (client) {
     var info = client.page.hp.validation.blank_posting_info();
     info.contact_info();
     info.expect.element('@name').to.have.value.that.equals('');
@@ -92,27 +100,27 @@ module.exports = {
     client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@zillowgroup.com');
   },
 
-  '[09] - Post a listing: No Photos' : function (client) {
+  '[11] - Post a listing: No Photos' : function (client) {
     var upload = client.page.hp.validation.blank_posting_info();
     upload.upload_photo();
     client.pause(1000);
   },
 
-  '[10] - Save button should now be enabled' : function (client) {
+  '[12] - Save button should now be enabled' : function (client) {
     var save = client.page.hp.posting_info();
     save.expect.element('@save').to.be.enabled;
     client.pause(1000);
   },
 
-  '[11] - Clicking on Activate should throw errors' : function (client) {
+  '[13] - Clicking on Activate should throw errors' : function (client) {
     var activate = client.page.hp.posting_info();
-    activate.expect.element('@active').to.be.enabled;
-    activate.click('@active');
-    activate.click('@active');
+    activate.expect.element('@active2').to.be.enabled;
+    activate.click('@active2');
+    activate.click('@active2');
     client.pause(1000);
   },
 
-  '[12] - Show errors | Missing required fields:' : function (client) {
+  '[14] - Show errors | Missing required fields:' : function (client) {
     var errors = client.page.hp.validation.blank_posting_info();
     errors.expect.element('@no_street').to.be.visible.before(3000);
     errors.expect.element('@no_city').to.be.visible;
@@ -121,12 +129,12 @@ module.exports = {
     errors.expect.element('@no_beds').to.be.visible;
     errors.expect.element('@no_baths').to.be.visible;
     errors.expect.element('@no_description').to.be.visible;
-    errors.expect.element('@no_phone').to.be.visible;
+    errors.expect.element('@no_phone2').to.be.visible;
     errors.expect.element('@form_errors').to.be.visible;
     errors.expect.element('@error_occurred').to.be.visible;
   },
 
-  '[13] - Post a listing: Location' : function (client) {
+  '[15] - Post a listing: Location' : function (client) {
     var location = client.page.hp.posting_info();
     location.location_address();
     location.expect.element('@street').to.have.value.that.equals('33 Vista Rd');
@@ -135,7 +143,7 @@ module.exports = {
     location.expect.element('@zip').to.have.value.that.equals('94502');
   },
 
-  '[14] - Post a listing: Details and Description' : function (client) {
+  '[16] - Post a listing: Details and Description' : function (client) {
     var details = client.page.hp.posting_info();
     details.details_description();
     details.expect.element('@price').to.have.value.that.equals('$3500');
@@ -144,7 +152,7 @@ module.exports = {
     details.expect.element('@description').to.have.value.that.equals('This is an awesome place!');
   },
 
-  '[15] - Post a listing: Contact Information' : function (client) {
+  '[17] - Post a listing: Contact Information' : function (client) {
     var info = client.page.hp.posting_info();
     info.contact_info();
     info.expect.element('@name').to.have.value.that.equals('QA Test');
@@ -157,13 +165,13 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[16] - Post a listing: Photos' : function (client) {
+  '[18] - Post a listing: Photos' : function (client) {
     var upload = client.page.hp.posting_info();
     upload.upload_photo();
     client.pause(1000);
   },
 
-  '[17] - Post a listing: Amenities and Rules | Amenities' : function (client) {
+  '[19] - Post a listing: Amenities and Rules | Amenities' : function (client) {
     var amenities = client.page.hp.amenities_rules();
     amenities.expect.element('@furnished').to.be.visible;
     amenities.click('@furnished');
@@ -171,21 +179,21 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[18] - Post a listing: Amenities and Rules | Laundry' : function (client) {
+  '[20] - Post a listing: Amenities and Rules | Laundry' : function (client) {
     var laundry = client.page.hp.amenities_rules();
     laundry.expect.element('@none').to.be.visible;
     laundry.click('@none');
     client.pause(1000);
   },
 
-  '[19] - Post a listing: Amenities and Rules | Pets' : function (client) {
+  '[21] - Post a listing: Amenities and Rules | Pets' : function (client) {
     var pets = client.page.hp.amenities_rules();
     pets.expect.element('@nopetsallowed').to.be.visible;
     pets.click('@nopetsallowed');
     client.pause(1000);
   },
 
-  '[20] - Now saving...' : function (client) {
+  '[22] - Now saving...' : function (client) {
     var save = client.page.hp.posting_info();
     save.expect.element('@save').to.be.enabled;
     save.click('@save');

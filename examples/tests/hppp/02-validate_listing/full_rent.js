@@ -102,9 +102,9 @@ module.exports = {
 
   '[11] - Clicking on Activate should throw errors' : function (client) {
     var activate = client.page.hp.posting_info();
-    activate.expect.element('@active').to.be.enabled;
-    activate.click('@active');
-    activate.click('@active');
+    activate.expect.element('@active1').to.be.enabled;
+    activate.click('@active1');
+    activate.click('@active1');
     client.pause(1000);
   },
 
@@ -117,7 +117,7 @@ module.exports = {
     errors.expect.element('@no_beds').to.be.visible;
     errors.expect.element('@no_baths').to.be.visible;
     errors.expect.element('@no_description').to.be.visible;
-    errors.expect.element('@no_phone').to.be.visible;
+    errors.expect.element('@no_phone1').to.be.visible;
     errors.expect.element('@form_errors').to.be.visible;
     errors.expect.element('@error_occurred').to.be.visible;
   },

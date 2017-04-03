@@ -1,8 +1,8 @@
 /* jshint expr: true */
 module.exports = {
-  '[00] - Sign in / register | https://hotpads.com/login' : function (client) {
+  '[00] - Sign in / register | https://hotpads.com/rental-manager/login' : function (client) {
     client
-      .url('https://hotpads.com/login')
+      .url('https://hotpads.com/rental-manager/login/')
       .pause(1000);
   },
 

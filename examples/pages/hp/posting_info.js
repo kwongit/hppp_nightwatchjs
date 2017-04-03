@@ -23,7 +23,8 @@ module.exports = {
     save: { selector: '//button[contains(text(), "Save listing")]', locateStrategy: 'xpath' }, //always remember to put a comma after the 2nd to last '}'
 
     //activate button
-    active: { selector: '//button[contains(text(), "Activate listing")]', locateStrategy: 'xpath' }
+    active1: { selector: '//button[contains(text(), "Activate listing")]', locateStrategy: 'xpath' },
+    active2: { selector: '//button[contains(text(), "Activate Listing")]', locateStrategy: 'xpath' },
   },
   commands: [{
     location_address: function() {

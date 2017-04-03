@@ -1,8 +1,8 @@
 /* jshint expr: true */
 module.exports = {
-  '[00] - Edit Listing | https://hotpads.com/user/edit-listing/1609833' : function (client) {
+  '[00] - Edit Listing | https://hotpads.com/rental-manager/user/edit-listing/1609833' : function (client) {
     client
-      .url('https://hotpads.com/user/edit-listing/1609833')
+      .url('https://hotpads.com/rental-manager/user/edit-listing/1609833')
       .pause(1000);
   },
 
@@ -78,9 +78,9 @@ module.exports = {
 
   '[11] - Clicking on Activate should throw errors' : function (client) {
     var activate = client.page.hp.posting_info();
-    activate.expect.element('@active').to.be.enabled;
-    activate.click('@active');
-    activate.click('@active');
+    activate.expect.element('@active2').to.be.enabled;
+    activate.click('@active2');
+    activate.click('@active2');
     client.pause(1000);
   },
 
@@ -93,7 +93,7 @@ module.exports = {
     errors.expect.element('@no_beds').to.be.visible;
     errors.expect.element('@no_baths').to.be.visible;
     errors.expect.element('@no_description').to.be.visible;
-    errors.expect.element('@no_phone').to.be.visible;
+    errors.expect.element('@no_phone2').to.be.visible;
     errors.expect.element('@form_errors').to.be.visible;
     errors.expect.element('@error_occurred').to.be.visible;
   },

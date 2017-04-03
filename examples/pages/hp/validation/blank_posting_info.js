@@ -1,5 +1,8 @@
 module.exports = {
   elements: {
+    // title
+    for_rent: { selector: '//h1[contains(text(), "For rent: townhouse")]', locateStrategy: 'xpath' },
+
     //location
     street: { selector: 'input[name=street]', locateStrategy: 'css' },
     city: { selector: 'input[name=city]', locateStrategy: 'css' },
@@ -46,7 +49,10 @@ module.exports = {
 
     no_description: { selector: '//span[contains(text(), "Please provide a description.")]', locateStrategy: 'xpath' },
 
-    no_phone: { selector: '//span[contains(text(), "Please enter a valid 10 digit phone number.")]', locateStrategy: 'xpath' },
+    no_phone1: { selector: '//span[contains(text(), "Please enter a valid 10 digit phone number.")]', locateStrategy: 'xpath' },
+
+    no_phone2: { selector: '//span[contains(text(), "Please enter your phone number.")]', locateStrategy: 'xpath' },
+
   },
   commands: [{
     location_address: function() {

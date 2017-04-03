@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="22">
+
+  <testsuite name="hppp.02-validate_listing.full_rent"
+    errors="0" failures="0" hostname="" id="" package="02-validate_listing" skipped="0"
+    tests="22" time="37.93" timestamp="Mon, 03 Apr 2017 22:33:10 GMT">
+  
+    <testcase name="[00] - Look for the CTA button: Post a listing" classname="hppp.02-validate_listing.full_rent" time="6.067" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[01] - Enter valid email:" classname="hppp.02-validate_listing.full_rent" time="2.036" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[02] - Enter valid password:" classname="hppp.02-validate_listing.full_rent" time="2.819" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[03] - Check for listing types: (2)" classname="hppp.02-validate_listing.full_rent" time="1.589" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[04] - Check for property types: (4)" classname="hppp.02-validate_listing.full_rent" time="3.552" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[05] - Save button should be disabled" classname="hppp.02-validate_listing.full_rent" time="3.065" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[06] - Post a listing: No Location" classname="hppp.02-validate_listing.full_rent" time="0.8920" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[07] - Post a listing: No Details and Description" classname="hppp.02-validate_listing.full_rent" time="1.099" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[08] - Post a listing: No Contact Information" classname="hppp.02-validate_listing.full_rent" time="0.5500" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[09] - Post a listing: No Photos" classname="hppp.02-validate_listing.full_rent" time="1.245" assertions="0">
+    </testcase>
+  
+    <testcase name="[10] - Save button should now be enabled" classname="hppp.02-validate_listing.full_rent" time="1.070" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[11] - Clicking on Activate should throw errors" classname="hppp.02-validate_listing.full_rent" time="1.416" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[12] - Show errors | Missing required fields:" classname="hppp.02-validate_listing.full_rent" time="0.9980" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[13] - Post a listing: Location" classname="hppp.02-validate_listing.full_rent" time="1.489" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[14] - Post a listing: Details and Description" classname="hppp.02-validate_listing.full_rent" time="1.562" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[15] - Post a listing: Contact Information" classname="hppp.02-validate_listing.full_rent" time="2.231" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="[16] - Post a listing: Photos" classname="hppp.02-validate_listing.full_rent" time="1.090" assertions="0">
+    </testcase>
+  
+    <testcase name="[17] - Post a listing: Amenities and Rules | Amenities" classname="hppp.02-validate_listing.full_rent" time="1.384" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[18] - Post a listing: Amenities and Rules | Laundry" classname="hppp.02-validate_listing.full_rent" time="1.247" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[19] - Post a listing: Amenities and Rules | Pets" classname="hppp.02-validate_listing.full_rent" time="1.258" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="[20] - Now saving..." classname="hppp.02-validate_listing.full_rent" time="1.254" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Return '{URL}':" classname="hppp.02-validate_listing.full_rent" time="0.01600" assertions="0">
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
