@@ -32,7 +32,7 @@ module.exports = {
     client
       .url('http://digg.com')
       .waitForElementVisible('body', 1000)
-      .click('#nav-signin')
+      .click('#nav-signIn')
       .click('#btn-facebook-auth-topnav')
       .windowHandles(function(result) {
         client.assert.equal(result.value.length, 2, 'There should be two windows open.');
