@@ -1,60 +1,60 @@
-15:17:06.215 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
-15:17:06.216 INFO - Launching a standalone Selenium Server
-2017-04-04 15:17:06.236:INFO::main: Logging initialized @267ms to org.seleniumhq.jetty9.util.log.StdErrLog
-15:17:06.286 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+11:44:32.384 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
+11:44:32.385 INFO - Launching a standalone Selenium Server
+2017-04-05 11:44:32.408:INFO::main: Logging initialized @256ms to org.seleniumhq.jetty9.util.log.StdErrLog
+11:44:32.467 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
  registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
-15:17:06.286 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+11:44:32.468 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
  registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
-15:17:06.286 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-15:17:06.286 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+11:44:32.468 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:44:32.468 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
 Unable to create new instances on this machine.
-15:17:06.286 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-15:17:06.287 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-2017-04-04 15:17:06.331:INFO:osjs.Server:main: jetty-9.2.20.v20161216
-2017-04-04 15:17:06.372:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@604ed9f0{/,null,AVAILABLE}
-2017-04-04 15:17:06.411:INFO:osjs.AbstractConnector:main: Started ServerConnector@11b100c7{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
-2017-04-04 15:17:06.413:INFO:osjs.Server:main: Started @444ms
-15:17:06.413 INFO - Selenium Server is up and running
-15:17:06.648 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
-15:17:06.671 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 04 Forgot Password / Forgot Password, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-15:17:06.687 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Rental Manager / 04 Forgot Password / Forgot Password, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f) on port 46557
+11:44:32.468 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:44:32.468 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-04-05 11:44:32.512:INFO:osjs.Server:main: jetty-9.2.20.v20161216
+2017-04-05 11:44:32.556:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@604ed9f0{/,null,AVAILABLE}
+2017-04-05 11:44:32.583:INFO:osjs.AbstractConnector:main: Started ServerConnector@5700d6b1{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-04-05 11:44:32.583:INFO:osjs.Server:main: Started @432ms
+11:44:32.583 INFO - Selenium Server is up and running
+11:44:32.843 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+11:44:32.868 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 04 Forgot Password / Forgot Password, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+11:44:32.882 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Rental Manager / 04 Forgot Password / Forgot Password, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f) on port 14409
 Only local connections are allowed.
-15:17:07.792 INFO - Detected dialect: OSS
-15:17:07.831 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 04 Forgot Password / Forgot Password, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-15:17:07.860 INFO - Executing: [get: https://hotpads.com/login])
-15:17:09.908 INFO - Done: [get: https://hotpads.com/login]
-15:17:10.933 INFO - Executing: [find element: By.cssSelector: input[name=email]])
-15:17:10.971 INFO - Done: [find element: By.cssSelector: input[name=email]]
-15:17:10.989 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, z, i, l, l, o, w, g, r, o, u, p, ., c, o, m]])
-15:17:11.311 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, z, i, l, l, o, w, g, r, o, u, p, ., c, o, m]]
-15:17:11.323 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
-15:17:11.353 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
-15:17:11.360 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> xpath: //button[contains(text(), "Continue")]]])
-15:17:11.456 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> xpath: //button[contains(text(), "Continue")]]]
-15:17:12.482 INFO - Executing: [find element: By.xpath: //a[contains(text(), "Forgot your password?")]])
-15:17:12.517 INFO - Done: [find element: By.xpath: //a[contains(text(), "Forgot your password?")]]
-15:17:12.521 INFO - Executing: [click: 2 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> xpath: //a[contains(text(), "Forgot your password?")]]])
-15:17:12.594 INFO - Done: [click: 2 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> xpath: //a[contains(text(), "Forgot your password?")]]]
-15:17:13.617 INFO - Executing: [find elements: By.xpath: //h1[contains(text(), "Forgotten password?")]])
-15:17:13.643 INFO - Done: [find elements: By.xpath: //h1[contains(text(), "Forgotten password?")]]
-15:17:13.650 INFO - Executing: [find elements: By.xpath: //p[contains(text(), "Enter your email and we'll send you instructions to reset it.")]])
-15:17:13.683 INFO - Done: [find elements: By.xpath: //p[contains(text(), "Enter your email and we'll send you instructions to reset it.")]]
-15:17:13.692 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Make sure to check your spam folder.")]])
-15:17:13.719 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Make sure to check your spam folder.")]]
-15:17:13.731 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Submit")]])
-15:17:13.754 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Submit")]]
-15:17:13.764 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Submit")]])
-15:17:13.791 INFO - Done: [find element: By.xpath: //button[contains(text(), "Submit")]]
-15:17:13.800 INFO - Executing: [click: 6 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> xpath: //button[contains(text(), "Submit")]]])
-15:17:13.872 INFO - Done: [click: 6 [[ChromeDriver: chrome on MAC (1e0ee4e055efe70a0bfbe0d027d44ca3)] -> xpath: //button[contains(text(), "Submit")]]]
-15:17:15.911 INFO - Executing: [find elements: By.xpath: //h1[contains(text(), "Check your email!")]])
-15:17:15.932 INFO - Done: [find elements: By.xpath: //h1[contains(text(), "Check your email!")]]
-15:17:15.937 INFO - Executing: [find elements: By.xpath: //p[contains(text(), " We sent an email to ")]])
-15:17:15.956 INFO - Done: [find elements: By.xpath: //p[contains(text(), " We sent an email to ")]]
-15:17:15.962 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "v-kevinwo@zillowgroup.com")]])
-15:17:15.986 INFO - Done: [find elements: By.xpath: //div[contains(text(), "v-kevinwo@zillowgroup.com")]]
-15:17:15.991 INFO - Executing: [find elements: By.xpath: //p[contains(text(), "Follow the instructions to reset your password. Check your spam folder if you don't see it within a minute!")]])
-15:17:16.023 INFO - Done: [find elements: By.xpath: //p[contains(text(), "Follow the instructions to reset your password. Check your spam folder if you don't see it within a minute!")]]
-15:17:17.030 INFO - Executing: [get current url])
-15:17:17.038 INFO - Done: [get current url]
+11:44:34.002 INFO - Detected dialect: OSS
+11:44:34.029 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 04 Forgot Password / Forgot Password, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+11:44:34.052 INFO - Executing: [get: https://hotpads.com/login])
+11:44:37.356 INFO - Done: [get: https://hotpads.com/login]
+11:44:38.379 INFO - Executing: [find element: By.cssSelector: input[name=email]])
+11:44:38.412 INFO - Done: [find element: By.cssSelector: input[name=email]]
+11:44:38.424 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, z, i, l, l, o, w, g, r, o, u, p, ., c, o, m]])
+11:44:38.685 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, z, i, l, l, o, w, g, r, o, u, p, ., c, o, m]]
+11:44:38.690 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
+11:44:38.711 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
+11:44:38.715 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> xpath: //button[contains(text(), "Continue")]]])
+11:44:38.788 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> xpath: //button[contains(text(), "Continue")]]]
+11:44:39.812 INFO - Executing: [find element: By.xpath: //a[contains(text(), "Forgot your password?")]])
+11:44:39.834 INFO - Done: [find element: By.xpath: //a[contains(text(), "Forgot your password?")]]
+11:44:39.840 INFO - Executing: [click: 2 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> xpath: //a[contains(text(), "Forgot your password?")]]])
+11:44:39.928 INFO - Done: [click: 2 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> xpath: //a[contains(text(), "Forgot your password?")]]]
+11:44:40.946 INFO - Executing: [find elements: By.xpath: //h1[contains(text(), "Forgotten password?")]])
+11:44:40.973 INFO - Done: [find elements: By.xpath: //h1[contains(text(), "Forgotten password?")]]
+11:44:40.980 INFO - Executing: [find elements: By.xpath: //p[contains(text(), "Enter your email and we'll send you instructions to reset it.")]])
+11:44:41.004 INFO - Done: [find elements: By.xpath: //p[contains(text(), "Enter your email and we'll send you instructions to reset it.")]]
+11:44:41.012 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Make sure to check your spam folder.")]])
+11:44:41.057 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Make sure to check your spam folder.")]]
+11:44:41.065 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Submit")]])
+11:44:41.097 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Submit")]]
+11:44:41.110 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Submit")]])
+11:44:41.139 INFO - Done: [find element: By.xpath: //button[contains(text(), "Submit")]]
+11:44:41.145 INFO - Executing: [click: 6 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> xpath: //button[contains(text(), "Submit")]]])
+11:44:41.237 INFO - Done: [click: 6 [[ChromeDriver: chrome on MAC (2f563a0162edb4cf0e2c54a1c01b0a9c)] -> xpath: //button[contains(text(), "Submit")]]]
+11:44:43.282 INFO - Executing: [find elements: By.xpath: //h1[contains(text(), "Check your email!")]])
+11:44:43.303 INFO - Done: [find elements: By.xpath: //h1[contains(text(), "Check your email!")]]
+11:44:43.307 INFO - Executing: [find elements: By.xpath: //p[contains(text(), " We sent an email to ")]])
+11:44:43.329 INFO - Done: [find elements: By.xpath: //p[contains(text(), " We sent an email to ")]]
+11:44:43.335 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "v-kevinwo@zillowgroup.com")]])
+11:44:43.356 INFO - Done: [find elements: By.xpath: //div[contains(text(), "v-kevinwo@zillowgroup.com")]]
+11:44:43.363 INFO - Executing: [find elements: By.xpath: //p[contains(text(), "Follow the instructions to reset your password. Check your spam folder if you don't see it within a minute!")]])
+11:44:43.390 INFO - Done: [find elements: By.xpath: //p[contains(text(), "Follow the instructions to reset your password. Check your spam folder if you don't see it within a minute!")]]
+11:44:44.402 INFO - Executing: [get current url])
+11:44:44.411 INFO - Done: [get current url]

@@ -2,6 +2,8 @@ module.exports = {
   elements: {
     //amenities
 
+    amenitiesHeader: { selector: '//div[contains(text(), "Amenities (optional)")]', locateStrategy: 'xpath' },
+
     ac: { selector: '//span[contains(text(), "A/C")]', locateStrategy: 'xpath' },
 
     balcony1: { selector: '//span[contains(text(), "Balcony / deck")]', locateStrategy: 'xpath' },
@@ -22,6 +24,8 @@ module.exports = {
 
     //laundry
 
+    laundryHeader: { selector: '//div[contains(text(), "Laundry")]', locateStrategy: 'xpath' },
+
     none: { selector: '//span[contains(text(), "None")]', locateStrategy: 'xpath' },
 
     inUnit: { selector: '//span[contains(text(), "In unit")]', locateStrategy: 'xpath' },
@@ -29,6 +33,8 @@ module.exports = {
     shared: { selector: '//span[contains(text(), "Shared / in-building")]', locateStrategy: 'xpath' },
 
     //pets
+
+    petsHeader: { selector: '//div[contains(text(), "Pets")]', locateStrategy: 'xpath' },
 
     noPetsAllowed: { selector: '//span[contains(text(), "No pets allowed")]', locateStrategy: 'xpath' },
 

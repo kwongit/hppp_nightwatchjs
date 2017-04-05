@@ -18,9 +18,9 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[03] - Navigate to /rental-manager/user/edit-listing/1611954' : function (client) {
+  '[03] - Navigate to /rental-manager/user/edit-listing/1611866' : function (client) {
     client
-      .url('https://hotpads.com/rental-manager/user/edit-listing/1611954')
+      .url('https://hotpads.com/rental-manager/user/edit-listing/1611866')
       .pause(1000);
   },
 

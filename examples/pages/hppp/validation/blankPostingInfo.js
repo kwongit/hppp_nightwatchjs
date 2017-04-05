@@ -6,7 +6,23 @@ module.exports = {
 
     roomForRent: { selector: '//h1[contains(text(), "Room for rent: house")]', locateStrategy: 'xpath' },
 
+    // post to-do listing (left nav)
+
+    // toDoNav: { selector: '//div[contains(text(), "Posting to-do list")]', locateStrategy: 'xpath' },
+
+    locationNav: { selector: '//a[contains(text(), "Location")]', locateStrategy: 'xpath' },
+
+    detailsDescriptionNav: { selector: '//a[contains(text(), "Details and Description")]', locateStrategy: 'xpath' },
+
+    amenitiesAndRulesNav: { selector: '//a[contains(text(), "Amenities and Rules")]', locateStrategy: 'xpath' },
+
+    photosNav: { selector: '//a[contains(text(), "Photos")]', locateStrategy: 'xpath' },
+
+    contactInfoNav: { selector: '//a[contains(text(), "Contact Information")]', locateStrategy: 'xpath' },
+
     //location
+
+    // locationHeader: { selector: '//div[contains(text(), "Location")]', locateStrategy: 'xpath' },
 
     street: { selector: 'input[name=street]', locateStrategy: 'css' },
 
@@ -17,6 +33,8 @@ module.exports = {
     zip: { selector: 'input[name=zip]', locateStrategy: 'css' },
 
     //details & description
+
+    // detailsDescriptionHeader: { selector: '//div[contains(text(), "Details and description")]', locateStrategy: 'xpath' },
 
     price: { selector: 'input[name=price]', locateStrategy: 'css' },
 
@@ -32,11 +50,15 @@ module.exports = {
 
     //contact information
 
+    // contactInfoHeader: { selector: '//div[contains(text(), "Contact information")]', locateStrategy: 'xpath' },
+
     name: { selector: 'input[name=contactName]', locateStrategy: 'css' },
 
     phone: { selector: 'input[name=contactPhone]', locateStrategy: 'css' },
 
     //photo upload
+
+    // photosHeader: { selector: '//div[contains(text(), "Photos")]', locateStrategy: 'xpath' },
 
     photos: { selector: 'input[type=file]', locateStrategy: 'css' },
 

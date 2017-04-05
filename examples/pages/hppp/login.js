@@ -1,5 +1,7 @@
 module.exports = {
   elements: {
+    login: { selector: '//h1[contains(text(), "Sign in / register")]', locateStrategy: 'xpath' },
+
     emailField: { selector: 'input[name=email]', locateStrategy: 'css' },
 
     passwordField: { selector: 'input[name=password]', locateStrategy: 'css' },

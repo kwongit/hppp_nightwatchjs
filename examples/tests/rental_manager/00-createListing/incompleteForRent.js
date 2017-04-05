@@ -26,15 +26,15 @@ module.exports = {
     });
   },
 
-  '[04] - Select your listing type: Room for rent' : function (client) {
+  '[04] - Select your listing type: For rent' : function (client) {
     var listings = client.page.hppp.listingType();
-    listings.click('@roomForRent');
+    listings.click('@forRent');
     client.pause(1000);
   },
 
-  '[05] - Select your property type: House' : function (client) {
+  '[05] - Select your property type: Townhouse' : function (client) {
     var types = client.page.hppp.propertyType();
-    types.click('@house');
+    types.click('@townhouse');
     client.pause(3000);
   },
 
