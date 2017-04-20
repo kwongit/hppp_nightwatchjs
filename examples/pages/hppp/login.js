@@ -20,14 +20,14 @@ module.exports = {
   },
   commands: [{
     email: function() {
-      return this.setValue('@emailField', 'v-kevinwo@zillowgroup.com')
+      return this.setValue('@emailField', 'v-kevinwo@hotpads.com')
                  .click('@continue');
     },
     noEmail: function() {
       return this.click('@continue');
     },
     password: function() {
-      return this.setValue('@passwordField', 'test123')
+      return this.setValue('@passwordField', 'Zillow123!')
                  .click('@signIn');
     },
     noPassword: function() {

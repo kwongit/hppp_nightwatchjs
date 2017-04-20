@@ -2,7 +2,7 @@ module.exports = {
   elements: {
     // copy
 
-    hello: { selector: '//h1[contains(text(), "Hello v-kevinwo@zillowgroup.com, welcome to hotpads Rental Manager")]', locateStrategy: 'xpath' },
+    hello: { selector: '//h1[contains(text(), "Welcome to hotpads Rental Manager")]', locateStrategy: 'xpath' },
 
     // links
 
@@ -12,6 +12,6 @@ module.exports = {
 
     back: { selector: '//a[contains(text(), "Back to ")]', locateStrategy: 'xpath' },
 
-    email: { selector: '//a[contains(text(), "v-kevinwo@zillowgroup.com")]', locateStrategy: 'xpath' },
+    email: { selector: '//a[contains(text(), "v-kevinwo@hotpads.com")]', locateStrategy: 'xpath' },
   }
 };

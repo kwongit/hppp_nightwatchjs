@@ -2,7 +2,9 @@ module.exports = {
   elements: {
     // title
 
-    forRent: { selector: '//h1[contains(text(), "For rent: townhouse")]', locateStrategy: 'xpath' },
+    forRentTownhouse: { selector: '//h1[contains(text(), "For rent: townhouse")]', locateStrategy: 'xpath' },
+
+    forRentMFH: { selector: '//h1[contains(text(), "For rent: apartment community")]', locateStrategy: 'xpath' },
 
     roomForRent: { selector: '//h1[contains(text(), "Room for rent: house")]', locateStrategy: 'xpath' },
 
@@ -19,6 +21,16 @@ module.exports = {
     photosNav: { selector: '//a[contains(text(), "Photos")]', locateStrategy: 'xpath' },
 
     contactInfoNav: { selector: '//a[contains(text(), "Contact Information")]', locateStrategy: 'xpath' },
+
+    buildingDetailsNav: { selector: '//a[contains(text(), "Building Details")]', locateStrategy: 'xpath' },
+
+    buildingPhotosNav: { selector: '//a[contains(text(), "Building Photos")]', locateStrategy: 'xpath' },
+
+    communityAmenitiesNav: { selector: '//a[contains(text(), "Community Amenities")]', locateStrategy: 'xpath' },
+
+    unitAmenitiesNav: { selector: '//a[contains(text(), "Unit Amenities")]', locateStrategy: 'xpath' },
+
+    floorplansNav: { selector: '//a[contains(text(), "Floorplans")]', locateStrategy: 'xpath' },
 
     //location
 
@@ -47,6 +59,12 @@ module.exports = {
     copy1: { selector: '//strong[contains(text(), "• Beds/baths")]', locateStrategy: 'xpath' },
 
     copy2: { selector: '//strong[contains(text(), "• Square footage")]', locateStrategy: 'xpath' },
+
+    // Building details
+
+    listingTitle: { selector: 'input[name=listingTitle]', locateStrategy: 'css' },
+
+    propertyDescription: { selector: 'textarea[name=description]', locateStrategy: 'css' },
 
     //contact information
 
@@ -88,6 +106,8 @@ module.exports = {
 
     noBaths: { selector: '//span[contains(text(), "Please enter the number of bathrooms")]', locateStrategy: 'xpath' },
 
+    noTitle: { selector: '//span[contains(text(), "Please enter the property name.")]', locateStrategy: 'xpath' },
+
     noDescription: { selector: '//span[contains(text(), "Please provide a description.")]', locateStrategy: 'xpath' },
 
     noPhone1: { selector: '//span[contains(text(), "Please enter a valid 10 digit phone number.")]', locateStrategy: 'xpath' },
@@ -102,11 +122,20 @@ module.exports = {
                  .setValue('@state', '')
                  .setValue('@zip', '')
     },
+    buildingDetails: function() {
+      return this.setValue('@listingTitle', '')
+                 .setValue('@propertyDescription', '')
+    },
     detailsDescription: function() {
       return this.setValue('@price', '')
                  .setValue('@beds', '')
                  .setValue('@baths', '')
                  .setValue('@description', '')
+    },
+    floorplanDetails: function() {
+      return this.setValue('@beds', '')
+                 .setValue('@baths', '')
+                 .setValue('@price', '')
     },
     contactInfo: function() {
       return this.setValue('@name', '')

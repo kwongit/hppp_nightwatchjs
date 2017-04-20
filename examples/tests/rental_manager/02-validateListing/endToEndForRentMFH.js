@@ -16,7 +16,7 @@ module.exports = {
     login.noEmail();
     login.expect.element('@noEmail').to.be.visible;
     login.email();
-    login.expect.element('@emailField').to.have.value.that.equals('v-kevinwo@zillowgroup.com');
+    login.expect.element('@emailField').to.have.value.that.equals('v-kevinwo@hotpads.com');
     client.pause(1000);
   },
 
@@ -28,13 +28,14 @@ module.exports = {
     client.pause(1000);
     login.expect.element('@badPassword').to.be.visible;
     login.password();
-    login.expect.element('@passwordField').to.have.value.that.equals('test123');
+    login.expect.element('@passwordField').to.have.value.that.equals('Zillow123!');
     client.pause(1000);
   },
 
   '[03] - Navigate to /rental-manager/' : function (client) {
     client.url('https://hotpads.com/rental-manager/', function(result) {
     var hello = client.page.hppp.rentalManager();
+    hello.assert.urlEquals('https://hotpads.com/rental-manager/');
     hello.expect.element('@hello').to.be.present;
     hello.expect.element('@post').to.be.present;
     hello.expect.element('@listings').to.be.present;
@@ -47,6 +48,7 @@ module.exports = {
 
   '[04] - Check for listing types: (2) | Select for rent' : function (client) {
     var listings = client.page.hppp.listingType();
+    listings.assert.urlEquals('https://hotpads.com/rental-manager/post-a-listing');
     listings.expect.element('@posting').to.be.visible;
     listings.expect.element('@select').to.be.visible;
     listings.expect.element('@view').to.be.visible;
@@ -56,7 +58,7 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[05] - Check for property types: (4) | Select townhouse' : function (client) {
+  '[05] - Check for property types: (4) | Select MFH' : function (client) {
     var types = client.page.hppp.propertyType();
     types.expect.element('@select').to.be.visible;
     types.expect.element('@goBack').to.be.visible;
@@ -64,7 +66,17 @@ module.exports = {
     types.expect.element('@townhouse').to.be.visible;
     types.expect.element('@condo').to.be.visible;
     types.expect.element('@apartment').to.be.visible;
-    types.click('@townhouse');
+    types.click('@apartment');
+    client.pause(3000);
+  },
+
+  '[05b] - # of units:' : function (client) {
+    var units = client.page.hppp.propertyType();
+    units.expect.element('@totalUnits').to.be.visible;
+    units.expect.element('@numberOfUnits').to.be.visible;
+    units.expect.element('@goBack').to.be.visible;
+    units.expect.element('@continueButton').to.be.visible;
+    units.inputUnits();
     client.pause(3000);
   },
 
@@ -74,9 +86,9 @@ module.exports = {
     });
   },
 
-  '[06] - Verify property type: townhouse' : function (client) {
+  '[06] - Verify property type: MFH' : function (client) {
     var type = client.page.hppp.validation.blankPostingInfo();
-    type.expect.element('@forRent').to.be.visible;
+    type.expect.element('@forRentMFH').to.be.visible;
     client.pause(1000);
   },
 
@@ -90,9 +102,11 @@ module.exports = {
     var leftNav = client.page.hppp.validation.blankPostingInfo();
     // leftNav.expect.element('@toDoNav').to.be.visible;
     leftNav.expect.element('@locationNav').to.be.visible;
-    leftNav.expect.element('@detailsDescriptionNav').to.be.visible;
-    leftNav.expect.element('@amenitiesAndRulesNav').to.be.visible;
-    leftNav.expect.element('@photosNav').to.be.visible;
+    leftNav.expect.element('@buildingDetailsNav').to.be.visible;
+    leftNav.expect.element('@buildingPhotosNav').to.be.visible;
+    leftNav.expect.element('@communityAmenitiesNav').to.be.visible;
+    leftNav.expect.element('@unitAmenitiesNav').to.be.visible;
+    leftNav.expect.element('@floorplansNav').to.be.visible;
     leftNav.expect.element('@contactInfoNav').to.be.visible;
   },
 
@@ -106,14 +120,19 @@ module.exports = {
     location.expect.element('@zip').to.have.value.that.equals('');
   },
 
-  '[10] - Post a listing: No Details and Description' : function (client) {
+  '[10] - Post a listing: No Building Details' : function (client) {
     var details = client.page.hppp.validation.blankPostingInfo();
-    // details.expect.element('@detailsDescriptionHeader').to.be.visible;
-    details.detailsDescription();
-    details.expect.element('@price').to.have.value.that.equals('');
+    details.buildingDetails();
+    details.expect.element('@listingTitle').to.have.value.that.equals('');
+    details.expect.element('@propertyDescription').to.have.value.that.equals('');
+  },
+
+  '[10b] - Post a listing: No Floorplan Details' : function (client) {
+    var details = client.page.hppp.validation.blankPostingInfo();
+    details.floorplanDetails();
     details.expect.element('@beds').to.have.value.that.equals('');
     details.expect.element('@baths').to.have.value.that.equals('');
-    details.expect.element('@description').to.have.value.that.equals('');
+    details.expect.element('@price').to.have.value.that.equals('');
   },
 
   '[11] - Post a listing: No Contact Information' : function (client) {
@@ -123,7 +142,7 @@ module.exports = {
     info.expect.element('@name').to.have.value.that.equals('');
     info.expect.element('@phone').to.have.value.that.equals('');
 
-    client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@zillowgroup.com');
+    client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@hotpads.com');
   },
 
   '[12] - Post a listing: No Photos' : function (client) {
@@ -135,7 +154,7 @@ module.exports = {
 
   '[13] - Save button should now be enabled' : function (client) {
     var save = client.page.hppp.postingInfo();
-    save.expect.element('@save').to.be.enabled;
+    save.expect.element('@save').to.not.be.enabled;
     client.pause(1000);
   },
 
@@ -153,12 +172,10 @@ module.exports = {
     errors.expect.element('@noCity').to.be.visible;
     errors.expect.element('@noState').to.be.visible;
     errors.expect.element('@noZip').to.be.visible;
-    errors.expect.element('@noBeds').to.be.visible;
-    errors.expect.element('@noBaths').to.be.visible;
+    errors.expect.element('@noTitle').to.be.visible;
     errors.expect.element('@noDescription').to.be.visible;
     errors.expect.element('@noPhone1').to.be.visible;
     errors.expect.element('@formErrors').to.be.visible;
-    errors.expect.element('@errorOccurred').to.be.visible;
   },
 
   '[16] - Post a listing: Location' : function (client) {
@@ -176,6 +193,7 @@ module.exports = {
     details.expect.element('@price').to.have.value.that.equals('$3500');
     details.expect.element('@beds').to.have.value.that.equals('3');
     details.expect.element('@baths').to.have.value.that.equals('2.5');
+    details.expect.element('@listingTitle').to.have.value.that.equals('Best Test');
     details.expect.element('@description').to.have.value.that.equals('This is an awesome place!');
   },
 

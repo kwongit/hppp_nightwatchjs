@@ -16,7 +16,7 @@ module.exports = {
     login.noEmail();
     login.expect.element('@noEmail').to.be.visible;
     login.email();
-    login.expect.element('@emailField').to.have.value.that.equals('v-kevinwo@zillowgroup.com');
+    login.expect.element('@emailField').to.have.value.that.equals('v-kevinwo@hotpads.com');
     client.pause(1000);
   },
 
@@ -28,7 +28,7 @@ module.exports = {
     client.pause(1000);
     login.expect.element('@badPassword').to.be.visible;
     login.password();
-    login.expect.element('@passwordField').to.have.value.that.equals('test123');
+    login.expect.element('@passwordField').to.have.value.that.equals('Zillow123!');
     client.pause(1000);
   },
 
@@ -124,7 +124,7 @@ module.exports = {
     info.expect.element('@name').to.have.value.that.equals('');
     info.expect.element('@phone').to.have.value.that.equals('');
 
-    client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@zillowgroup.com');
+    client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@hotpads.com');
   },
 
   '[11] - Post a listing: No Photos' : function (client) {
