@@ -37,8 +37,8 @@ module.exports = {
     client.pause(1000);
   },
 
-  '[05] - Click and delete listing:' : function (client) {
-    for (var i = 0; i < 2; i++) {
+  '[05] - Will keep clicking on listings found and delete listing...:' : function (client) {
+    for (var i = 0; i < 3; i++) {
       var firstListing = client.page.hppp.myListing();
       firstListing.click('@listingsFound');
       client.pause(1000);

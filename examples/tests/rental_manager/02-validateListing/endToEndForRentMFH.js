@@ -28,7 +28,7 @@ module.exports = {
     client.pause(1000);
     login.expect.element('@badPassword').to.be.visible;
     login.password();
-    login.expect.element('@passwordField').to.have.value.that.equals('Zillow123!');
+    login.expect.element('@passwordField').to.have.value.that.equals('Zillow1234!');
     client.pause(1000);
   },
 
@@ -193,7 +193,7 @@ module.exports = {
     details.expect.element('@price').to.have.value.that.equals('$3500');
     details.expect.element('@beds').to.have.value.that.equals('3');
     details.expect.element('@baths').to.have.value.that.equals('2.5');
-    details.expect.element('@listingTitle').to.have.value.that.equals('Best Test');
+    details.expect.element('@listingTitle').to.have.value.that.equals('Test listing title');
     details.expect.element('@description').to.have.value.that.equals('This is an awesome place!');
   },
 

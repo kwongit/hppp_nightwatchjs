@@ -28,7 +28,7 @@ module.exports = {
     client.pause(1000);
     login.expect.element('@badPassword').to.be.visible;
     login.password();
-    login.expect.element('@passwordField').to.have.value.that.equals('Zillow123!');
+    login.expect.element('@passwordField').to.have.value.that.equals('Zillow1234!');
     client.pause(1000);
   },
 
@@ -127,12 +127,12 @@ module.exports = {
     client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@hotpads.com');
   },
 
-  '[11] - Post a listing: No Photos' : function (client) {
-    var upload = client.page.hppp.validation.blankPostingInfo();
-    // upload.expect.element('@photosHeader').to.be.visible;
-    upload.uploadPhoto();
-    client.pause(1000);
-  },
+  // '[11] - Post a listing: No Photos' : function (client) {
+  //   var upload = client.page.hppp.validation.blankPostingInfo();
+  //   // upload.expect.element('@photosHeader').to.be.visible;
+  //   upload.uploadPhoto();
+  //   client.pause(1000);
+  // },
 
   '[12] - Save button should now be enabled' : function (client) {
     var save = client.page.hppp.postingInfo();
@@ -159,7 +159,7 @@ module.exports = {
     errors.expect.element('@noDescription').to.be.visible;
     errors.expect.element('@noPhone1').to.be.visible;
     errors.expect.element('@formErrors').to.be.visible;
-    errors.expect.element('@errorOccurred').to.be.visible;
+    // errors.expect.element('@errorOccurred').to.be.visible;
   },
 
   '[15] - Post a listing: Location' : function (client) {

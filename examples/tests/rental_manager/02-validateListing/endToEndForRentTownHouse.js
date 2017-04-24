@@ -28,7 +28,7 @@ module.exports = {
     client.pause(1000);
     login.expect.element('@badPassword').to.be.visible;
     login.password();
-    login.expect.element('@passwordField').to.have.value.that.equals('Zillow123!');
+    login.expect.element('@passwordField').to.have.value.that.equals('Zillow1234!');
     client.pause(1000);
   },
 
@@ -158,7 +158,7 @@ module.exports = {
     errors.expect.element('@noDescription').to.be.visible;
     errors.expect.element('@noPhone1').to.be.visible;
     errors.expect.element('@formErrors').to.be.visible;
-    errors.expect.element('@errorOccurred').to.be.visible;
+    // errors.expect.element('@errorOccurred').to.be.visible;
   },
 
   '[16] - Post a listing: Location' : function (client) {

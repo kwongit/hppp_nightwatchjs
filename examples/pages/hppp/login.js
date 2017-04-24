@@ -27,7 +27,7 @@ module.exports = {
       return this.click('@continue');
     },
     password: function() {
-      return this.setValue('@passwordField', 'Zillow123!')
+      return this.setValue('@passwordField', 'Zillow1234!')
                  .click('@signIn');
     },
     noPassword: function() {

@@ -142,7 +142,7 @@ module.exports = {
                  .setValue('@phone', '')
     },
     uploadPhoto: function() {
-      return this.setValue('@photos', require('path').resolve('/Users/kevinwo/Documents/zrm/test_photos/fail.jpg'))
+      return this.setValue('@photos', require('path').resolve(''))
     }
   }]
 };

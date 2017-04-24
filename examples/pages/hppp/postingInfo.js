@@ -18,6 +18,8 @@ module.exports = {
 
     baths: { selector: 'input[name=baths]', locateStrategy: 'css' },
 
+    listingTitle: { selector: 'input[name=listingTitle]', locateStrategy: 'css' },
+
     description: { selector: 'textarea[name=description]', locateStrategy: 'css' },
 
     //contact information
@@ -62,6 +64,7 @@ module.exports = {
                  .setValue('@beds', '3')
                  .setValue('@baths', '2.5')
                  .setValue('@description', 'This is an awesome place!')
+                 .setValue('@listingTitle', 'Test listing title')
     },
     clearDetails: function() {
       return this.clearValue('@price')
