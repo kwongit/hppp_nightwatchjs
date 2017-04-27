@@ -5,78 +5,83 @@ module.exports = {
       .url('https://hotpads.com/login')
       .pause(1000);
 
-    var verify = client.page.hppp.login();
-    verify.expect.element('@login').to.be.visible;
-    verify.expect.element('@emailField').to.be.visible;
-    verify.expect.element('@continue').to.be.visible;
+    // var verify = client.page.rental_manager.login();
+    // verify.expect.element('@login').to.be.visible;
+    // verify.expect.element('@emailField').to.be.visible;
+    // verify.expect.element('@continue').to.be.visible;
   },
 
   '[01] - Enter valid email:' : function (client) {
-    var login = client.page.hppp.login();
-    login.noEmail();
-    login.expect.element('@noEmail').to.be.visible;
-    login.email();
-    login.expect.element('@emailField').to.have.value.that.equals('v-kevinwo@hotpads.com');
+    var login = client.page.rental_manager.login();
+    // login.noEmail();
+    // login.expect.element('@noEmail').to.be.visible;
+    login.inputEmail();
+    // login.expect.element('@emailField').to.have.value.that.equals('v-kevinwo@hotpads.com');
     client.pause(1000);
   },
 
   '[02] - Enter valid password:' : function (client) {
-    var login = client.page.hppp.login();
-    login.noPassword();
-    login.expect.element('@noPassword').to.be.visible;
-    login.badPassword();
-    client.pause(1000);
-    login.expect.element('@badPassword').to.be.visible;
-    login.password();
-    login.expect.element('@passwordField').to.have.value.that.equals('Zillow1234!');
+    var login = client.page.rental_manager.login();
+    // login.noPassword();
+    // login.expect.element('@noPassword').to.be.visible;
+    // login.badPassword();
+    // client.pause(1000);
+    // login.expect.element('@badPassword').to.be.visible;
+    login.inputPassword();
+    // login.expect.element('@passwordField').to.have.value.that.equals('Zillow1234!');
     client.pause(1000);
   },
 
   '[03] - Navigate to /rental-manager/' : function (client) {
     client.url('https://hotpads.com/rental-manager/', function(result) {
-    var hello = client.page.hppp.rentalManager();
+    var hello = client.page.rental_manager.postAListing();
     hello.assert.urlEquals('https://hotpads.com/rental-manager/');
-    hello.expect.element('@hello').to.be.present;
-    hello.expect.element('@post').to.be.present;
-    hello.expect.element('@listings').to.be.present;
-    hello.expect.element('@back').to.be.present;
-    hello.expect.element('@email').to.be.present;
-    hello.click('@post');
+    hello.expect.element('@welcomeToHotPadsRentalManager').to.be.present;
+    hello.expect.element('@postToHotPads').to.be.present;
+    hello.expect.element('@myListings').to.be.present;
+    hello.expect.element('@backToHotPads').to.be.present;
+    hello.expect.element('@emailNav').to.be.present;
+    hello.click('@postToHotPads');
     client.pause(1000);
     });
   },
 
-  '[04] - Check for listing types: (2) | Select for rent' : function (client) {
-    var listings = client.page.hppp.listingType();
-    listings.assert.urlEquals('https://hotpads.com/rental-manager/post-a-listing');
-    listings.expect.element('@posting').to.be.visible;
-    listings.expect.element('@select').to.be.visible;
-    listings.expect.element('@view').to.be.visible;
-    listings.expect.element('@forRent').to.be.visible;
-    listings.expect.element('@roomForRent').to.be.visible;
-    listings.click('@forRent');
+  '[04] - Select listing type: | For rent' : function (client) {
+    var listingTypes = client.page.rental_manager.postAListing();
+    listingTypes.assert.urlEquals('https://hotpads.com/rental-manager/post-a-listing');
+    listingTypes.expect.element('@postingHeaderCopy').to.be.visible;
+    listingTypes.expect.element('@selectYourListingTypeCopy').to.be.visible;
+    listingTypes.expect.element('@selectForRent').to.be.visible;
+    listingTypes.expect.element('@selectRoomForRent').to.be.visible;
+    listingTypes.expect.element('@viewOtherListingsCopy').to.be.visible;
+    listingTypes.expect.element('@viewOtherListings').to.be.visible;
+    listingTypes.click('@selectForRent');
     client.pause(1000);
   },
 
-  '[05] - Check for property types: (4) | Select MFH' : function (client) {
-    var types = client.page.hppp.propertyType();
-    types.expect.element('@select').to.be.visible;
-    types.expect.element('@goBack').to.be.visible;
-    types.expect.element('@house').to.be.visible;
-    types.expect.element('@townhouse').to.be.visible;
-    types.expect.element('@condo').to.be.visible;
-    types.expect.element('@apartment').to.be.visible;
-    types.click('@apartment');
+  '[05] - Select property type: | Apartment Community' : function (client) {
+    var propertTypes = client.page.rental_manager.postAListing();
+    propertTypes.expect.element('@postingHeaderCopy').to.be.visible;
+    propertTypes.expect.element('@selectYourPropertyTypeCopy').to.be.visible;
+    propertTypes.expect.element('@house').to.be.visible;
+    propertTypes.expect.element('@townhouse').to.be.visible;
+    propertTypes.expect.element('@condo').to.be.visible;
+    propertTypes.expect.element('@apartment').to.be.visible;
+    propertTypes.expect.element('@goBackLink').to.be.visible;
+    propertTypes.click('@apartment');
     client.pause(3000);
   },
 
-  '[05b] - # of units:' : function (client) {
-    var units = client.page.hppp.propertyType();
-    units.expect.element('@totalUnits').to.be.visible;
-    units.expect.element('@numberOfUnits').to.be.visible;
-    units.expect.element('@goBack').to.be.visible;
-    units.expect.element('@continueButton').to.be.visible;
-    units.inputUnits();
+  '[05b] - # of units: | Must be greater than 1' : function (client) {
+    var unitsInApartment = client.page.rental_manager.postAListing();
+    unitsInApartment.expect.element('@postingHeaderCopy').to.be.visible;
+    unitsInApartment.expect.element('@totalUnitsCopy').to.be.visible;
+    unitsInApartment.expect.element('@numberOfUnits').to.be.visible;
+    unitsInApartment.expect.element('@goBackLink').to.be.visible;
+    unitsInApartment.expect.element('@continueButton').to.be.visible;
+    unitsInApartment.inputInvalidUnits();
+    unitsInApartment.expect.element('@invalidNumberCopy').to.be.visible;
+    unitsInApartment.inputValidUnits();
     client.pause(3000);
   },
 
@@ -86,21 +91,20 @@ module.exports = {
     });
   },
 
-  '[06] - Verify property type: MFH' : function (client) {
-    var type = client.page.hppp.validation.blankPostingInfo();
-    type.expect.element('@forRentMFH').to.be.visible;
+  '[06] - Verify property type: Apartment community' : function (client) {
+    var verifyPropertyTitle = client.page.rental_manager.postAListing();
+    verifyPropertyTitle.expect.element('@forRentApartmentTitle').to.be.visible;
     client.pause(1000);
   },
 
   '[07] - Save button should be disabled' : function (client) {
-    var save = client.page.hppp.validation.blankPostingInfo();
-    save.expect.element('@save').to.not.be.enabled;
+    var saveButtonDisabled = client.page.rental_manager.postAListing();
+    saveButtonDisabled.expect.element('@saveListingButton').to.not.be.enabled;
     client.pause(1000);
   },
 
-  '[08] - Check left nav menu:' : function (client) {
-    var leftNav = client.page.hppp.validation.blankPostingInfo();
-    // leftNav.expect.element('@toDoNav').to.be.visible;
+  '[08] - Check left-nav menu:' : function (client) {
+    var leftNav = client.page.rental_manager.postAListing();
     leftNav.expect.element('@locationNav').to.be.visible;
     leftNav.expect.element('@buildingDetailsNav').to.be.visible;
     leftNav.expect.element('@buildingPhotosNav').to.be.visible;
@@ -110,76 +114,38 @@ module.exports = {
     leftNav.expect.element('@contactInfoNav').to.be.visible;
   },
 
-  '[09] - Post a listing: No Location' : function (client) {
-    var location = client.page.hppp.validation.blankPostingInfo();
-    // location.expect.element('@locationHeader').to.be.visible;
-    location.locationAddress();
-    location.expect.element('@street').to.have.value.that.equals('');
-    location.expect.element('@city').to.have.value.that.equals('');
-    location.expect.element('@state').to.have.value.that.equals('');
-    location.expect.element('@zip').to.have.value.that.equals('');
+  '[09] - Post a listing: No street address' : function (client) {
+    var noLocation = client.page.rental_manager.postAListing();
+    noLocation.noLocationAddress();
+    noLocation.expect.element('@street').to.have.value.that.equals('');
   },
 
-  '[10] - Post a listing: No Building Details' : function (client) {
-    var details = client.page.hppp.validation.blankPostingInfo();
-    details.buildingDetails();
-    details.expect.element('@listingTitle').to.have.value.that.equals('');
-    details.expect.element('@propertyDescription').to.have.value.that.equals('');
-  },
-
-  '[10b] - Post a listing: No Floorplan Details' : function (client) {
-    var details = client.page.hppp.validation.blankPostingInfo();
-    details.floorplanDetails();
-    details.expect.element('@beds').to.have.value.that.equals('');
-    details.expect.element('@baths').to.have.value.that.equals('');
-    details.expect.element('@price').to.have.value.that.equals('');
-  },
-
-  '[11] - Post a listing: No Contact Information' : function (client) {
-    var info = client.page.hppp.validation.blankPostingInfo();
-    // info.expect.element('@contactInfoHeader').to.be.visible;
-    info.contactInfo();
-    info.expect.element('@name').to.have.value.that.equals('');
-    info.expect.element('@phone').to.have.value.that.equals('');
-
+  '[10] - Post a listing: No Contact Information' : function (client) {
     client.expect.element('input[name=contactEmail]').to.have.value.that.equals('v-kevinwo@hotpads.com');
   },
 
-  '[12] - Post a listing: No Photos' : function (client) {
-    var upload = client.page.hppp.validation.blankPostingInfo();
-    // upload.expect.element('@photosHeader').to.be.visible;
-    upload.uploadPhoto();
+  '[11] - Clicking on Activate should throw errors' : function (client) {
+    var activateButton = client.page.rental_manager.postAListing();
+    activateButton.expect.element('@activeListingButton').to.be.enabled;
+    activateButton.click('@activeListingButton');
+    activateButton.click('@activeListingButton');
     client.pause(1000);
   },
 
-  '[13] - Save button should now be enabled' : function (client) {
-    var save = client.page.hppp.postingInfo();
-    save.expect.element('@save').to.not.be.enabled;
-    client.pause(1000);
-  },
-
-  '[14] - Clicking on Activate should throw errors' : function (client) {
-    var activate = client.page.hppp.postingInfo();
-    activate.expect.element('@active2').to.be.enabled;
-    activate.click('@active2');
-    activate.click('@active2');
-    client.pause(1000);
-  },
-
-  '[15] - Show errors | Missing required fields:' : function (client) {
-    var errors = client.page.hppp.validation.blankPostingInfo();
+  '[12] - Show errors | Missing required fields:' : function (client) {
+    var errors = client.page.rental_manager.postAListing();
     errors.expect.element('@noStreet').to.be.visible.before(3000);
     errors.expect.element('@noCity').to.be.visible;
     errors.expect.element('@noState').to.be.visible;
     errors.expect.element('@noZip').to.be.visible;
-    errors.expect.element('@noTitle').to.be.visible;
-    errors.expect.element('@noDescription').to.be.visible;
-    errors.expect.element('@noPhone1').to.be.visible;
+    errors.expect.element('@noListingTitle').to.be.visible;
+    errors.expect.element('@noPropertyDescription').to.be.visible;
+    errors.expect.element('@noPhoneNumber2').to.be.visible;
     errors.expect.element('@formErrors').to.be.visible;
   },
 
-  '[16] - Post a listing: Location' : function (client) {
-    var location = client.page.hppp.postingInfo();
+  '[13] - Post a listing: Location' : function (client) {
+    var location = client.page.rental_manager.postAListing();
     location.locationAddress();
     location.expect.element('@street').to.have.value.that.equals('33 Vista Rd');
     location.expect.element('@city').to.have.value.that.equals('Alameda');
@@ -187,63 +153,86 @@ module.exports = {
     location.expect.element('@zip').to.have.value.that.equals('94502');
   },
 
-  '[17] - Post a listing: Details and Description' : function (client) {
-    var details = client.page.hppp.postingInfo();
-    details.detailsDescription();
-    details.expect.element('@price').to.have.value.that.equals('$3500');
-    details.expect.element('@beds').to.have.value.that.equals('3');
-    details.expect.element('@baths').to.have.value.that.equals('2.5');
-    details.expect.element('@listingTitle').to.have.value.that.equals('Test listing title');
-    details.expect.element('@description').to.have.value.that.equals('This is an awesome place!');
+  '[14] - Post a listing: Building details' : function (client) {
+    var buildingDetails = client.page.rental_manager.postAListing();
+    buildingDetails.buildingDetails();
+    buildingDetails.uploadPropertyPhoto();
+    buildingDetails.expect.element('@listingTitle').to.have.value.that.equals('Test listing title');
+    buildingDetails.expect.element('@propertyDescription').to.have.value.that.equals('This is an awesome place!');
+    buildingDetails.expect.element('@leaseTerms').to.have.value.that.equals('Month-to-month');
+    buildingDetails.expect.element('@websiteUrl').to.have.value.that.equals('hotpads.com');
+    buildingDetails.expect.element('@sundayHours').to.have.value.that.equals('10-6p');
+    buildingDetails.expect.element('@mondayHours').to.have.value.that.equals('10-6p');
+    buildingDetails.expect.element('@tuesdayHours').to.have.value.that.equals('10-6p');
+    buildingDetails.expect.element('@wednesdayHours').to.have.value.that.equals('10-6p');
+    buildingDetails.expect.element('@thursdayHours').to.have.value.that.equals('10-6p');
+    buildingDetails.expect.element('@fridayHours').to.have.value.that.equals('10-6p');
+    buildingDetails.expect.element('@saturdayHours').to.have.value.that.equals('10-6p');
   },
 
-  '[18] - Post a listing: Contact Information' : function (client) {
-    var info = client.page.hppp.postingInfo();
-    info.contactInfo();
-    info.expect.element('@name').to.have.value.that.equals('QA Test');
-    info.expect.element('@phone').to.have.value.that.equals('(415) 555-5555');
+  '[15] - Post a listing: Floorplan details' : function (client) {
+    var floorplanDetails = client.page.rental_manager.postAListing();
+    floorplanDetails.floorplanDetails();
+    floorplanDetails.uploadfloorplanLayoutPhoto();
+    floorplanDetails.uploadfloorplanPhotosPhoto();
+    floorplanDetails.expect.element('@floorplanName').to.have.value.that.equals('Test floorplan name');
+    floorplanDetails.expect.element('@beds').to.have.value.that.equals('3');
+    floorplanDetails.expect.element('@baths').to.have.value.that.equals('2.5');
+    floorplanDetails.expect.element('@price').to.have.value.that.equals('$7500');
+  },
 
-    var phone = client.page.hppp.verifyPhone();
-    phone.expect.element('@sms').to.be.visible;
-    phone.expect.element('@phoneCall').to.be.visible;
-    phone.click('@sms');
+  '[16] - Post a listing: Contact information' : function (client) {
+    var contactInfo = client.page.rental_manager.postAListing();
+    contactInfo.contactInfo();
+    contactInfo.expect.element('@name').to.have.value.that.equals('QA Test');
+    contactInfo.expect.element('@phone').to.have.value.that.equals('(415) 555-5555');
+    contactInfo.expect.element('@fax').to.have.value.that.equals('(415) 444-4444');
+    contactInfo.expect.element('@cc').to.have.value.that.equals('qa@zrm.com');
+  },
+
+  '[17] - Post a listing: Building photos' : function (client) {
+    var uploadPhoto = client.page.rental_manager.postAListing();
+    uploadPhoto.uploadBuildingPhoto();
     client.pause(1000);
   },
 
-  '[19] - Post a listing: Photos' : function (client) {
-    var upload = client.page.hppp.postingInfo();
-    upload.uploadPhoto();
-    client.pause(1000);
-  },
-
-  '[20] - Post a listing: Amenities and Rules | Amenities' : function (client) {
-    var amenities = client.page.hppp.amenitiesRules();
+  '[18] - Post a listing: Community amenities and rules | Amenities' : function (client) {
+    var amenities = client.page.rental_manager.postAListing();
     amenities.expect.element('@amenitiesHeader').to.be.visible;
     amenities.click('@ac');
-    amenities.click('@balcony2');
+    amenities.click('@balcony');
     amenities.click('@furnished');
-    amenities.click('@hardwood2');
+    amenities.click('@hardwoodFloor');
+    amenities.click('@wheelchairAccess');
+    amenities.click('@garageParking');
+    amenities.click('@offstreetParking');
     client.pause(1000);
   },
 
-  '[21] - Post a listing: Amenities and Rules | Laundry' : function (client) {
-    var laundry = client.page.hppp.amenitiesRules();
+  '[19] - Post a listing: Community amenities and rules | Laundry' : function (client) {
+    var laundry = client.page.rental_manager.postAListing();
     laundry.expect.element('@laundryHeader').to.be.visible;
     laundry.click('@none');
     client.pause(1000);
   },
 
-  '[22] - Post a listing: Amenities and Rules | Pets' : function (client) {
-    var pets = client.page.hppp.amenitiesRules();
+  '[20] - Post a listing: Community amenities and rules | Pets' : function (client) {
+    var pets = client.page.rental_manager.postAListing();
     pets.expect.element('@petsHeader').to.be.visible;
     pets.click('@noPetsAllowed');
     client.pause(1000);
   },
 
-  '[23] - Now saving...' : function (client) {
-    var save = client.page.hppp.postingInfo();
-    save.expect.element('@save').to.be.enabled;
-    save.click('@save');
+  '[21] - Post a listing: Community amenities and rules | Unit amenities' : function (client) {
+    var unitAmenities = client.page.rental_manager.postAListing();
+    unitAmenities.expect.element('@unitAmenities').to.be.visible;
+    unitAmenities.addUnitAmenities();
+  },
+
+  '[22] - Now saving...' : function (client) {
+    var saveButton = client.page.rental_manager.postAListing();
+    saveButton.expect.element('@saveListingButton').to.be.enabled;
+    saveButton.click('@saveListingButton');
     client.pause(1000);
   },
 };

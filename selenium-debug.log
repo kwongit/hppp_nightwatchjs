@@ -1,82 +1,348 @@
-17:17:17.587 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
-17:17:17.587 INFO - Launching a standalone Selenium Server
-2017-04-19 17:17:17.605:INFO::main: Logging initialized @261ms to org.seleniumhq.jetty9.util.log.StdErrLog
-17:17:17.659 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+14:47:31.761 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
+14:47:31.761 INFO - Launching a standalone Selenium Server
+2017-04-27 14:47:31.779:INFO::main: Logging initialized @244ms to org.seleniumhq.jetty9.util.log.StdErrLog
+14:47:31.838 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
  registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
-17:17:17.659 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+14:47:31.838 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
  registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
-17:17:17.660 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-17:17:17.660 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+14:47:31.838 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:47:31.839 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
 Unable to create new instances on this machine.
-17:17:17.660 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-17:17:17.660 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-2017-04-19 17:17:17.704:INFO:osjs.Server:main: jetty-9.2.20.v20161216
-2017-04-19 17:17:17.744:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@604ed9f0{/,null,AVAILABLE}
-2017-04-19 17:17:17.777:INFO:osjs.AbstractConnector:main: Started ServerConnector@5700d6b1{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
-2017-04-19 17:17:17.778:INFO:osjs.Server:main: Started @434ms
-17:17:17.778 INFO - Selenium Server is up and running
-17:17:18.020 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
-17:17:18.044 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 03 Other Listing / Delete Listing, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-17:17:18.058 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Rental Manager / 03 Other Listing / Delete Listing, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f) on port 29768
+14:47:31.839 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+14:47:31.839 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-04-27 14:47:31.881:INFO:osjs.Server:main: jetty-9.2.20.v20161216
+2017-04-27 14:47:31.928:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@604ed9f0{/,null,AVAILABLE}
+2017-04-27 14:47:31.956:INFO:osjs.AbstractConnector:main: Started ServerConnector@5700d6b1{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-04-27 14:47:31.957:INFO:osjs.Server:main: Started @423ms
+14:47:31.957 INFO - Selenium Server is up and running
+14:47:32.186 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+14:47:32.208 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 02 Validate Listing / End To End For Rent MFH, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+14:47:32.221 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Rental Manager / 02 Validate Listing / End To End For Rent MFH, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f) on port 14108
 Only local connections are allowed.
-17:17:19.137 INFO - Detected dialect: OSS
-17:17:19.170 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 03 Other Listing / Delete Listing, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-17:17:19.194 INFO - Executing: [get: https://hotpads.com/login])
-17:17:23.132 INFO - Done: [get: https://hotpads.com/login]
-17:17:24.157 INFO - Executing: [find element: By.cssSelector: input[name=email]])
-17:17:24.194 INFO - Done: [find element: By.cssSelector: input[name=email]]
-17:17:24.203 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, h, o, t, p, a, d, s, ., c, o, m]])
-17:17:24.409 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, h, o, t, p, a, d, s, ., c, o, m]]
-17:17:24.417 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
-17:17:24.439 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
-17:17:24.443 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //button[contains(text(), "Continue")]]])
-17:17:24.508 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //button[contains(text(), "Continue")]]]
-17:17:25.530 INFO - Executing: [find element: By.cssSelector: input[name=password]])
-17:17:25.550 INFO - Done: [find element: By.cssSelector: input[name=password]]
-17:17:25.559 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> css selector: input[name=password]], [Z, i, l, l, o, w, 1, 2, 3, !]])
-17:17:25.685 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> css selector: input[name=password]], [Z, i, l, l, o, w, 1, 2, 3, !]]
-17:17:25.690 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Sign in")]])
-17:17:25.714 INFO - Done: [find element: By.xpath: //button[contains(text(), "Sign in")]]
-17:17:25.719 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //button[contains(text(), "Sign in")]]])
-17:17:25.775 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //button[contains(text(), "Sign in")]]]
-17:17:26.788 INFO - Executing: [get: https://hotpads.com/rental-manager/])
-17:17:34.033 INFO - Done: [get: https://hotpads.com/rental-manager/]
-17:17:34.041 INFO - Executing: [find element: By.xpath: //a[contains(text(), "Post to ")]])
-17:17:34.062 INFO - Done: [find element: By.xpath: //a[contains(text(), "Post to ")]]
-17:17:34.067 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //a[contains(text(), "Post to ")]]])
-17:17:34.189 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //a[contains(text(), "Post to ")]]]
-17:17:35.206 INFO - Executing: [find element: By.xpath: //a[contains(text(), "here.")]])
-17:17:35.226 INFO - Done: [find element: By.xpath: //a[contains(text(), "here.")]]
-17:17:35.230 INFO - Executing: [click: 5 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //a[contains(text(), "here.")]]])
-17:17:38.810 INFO - Done: [click: 5 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //a[contains(text(), "here.")]]]
-17:17:39.823 INFO - Executing: [find elements: By.cssSelector: #listing-count])
-17:17:39.855 INFO - Done: [find elements: By.cssSelector: #listing-count]
-17:17:40.878 INFO - Executing: [find element: By.cssSelector: div[class=entryTitle]])
-17:17:40.900 INFO - Done: [find element: By.cssSelector: div[class=entryTitle]]
-17:17:40.905 INFO - Executing: [click: 7 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> css selector: div[class=entryTitle]]])
-17:17:43.952 INFO - Done: [click: 7 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> css selector: div[class=entryTitle]]]
-17:17:44.959 INFO - Executing: [find element: By.xpath: //a[contains(text(), "[ Delete listing ]")]])
-17:17:45.000 INFO - Done: [find element: By.xpath: //a[contains(text(), "[ Delete listing ]")]]
-17:17:45.005 INFO - Executing: [click: 8 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //a[contains(text(), "[ Delete listing ]")]]])
-17:17:45.097 INFO - Done: [click: 8 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //a[contains(text(), "[ Delete listing ]")]]]
-17:17:45.108 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Yes")]])
-17:17:45.159 INFO - Done: [find element: By.xpath: //button[contains(text(), "Yes")]]
-17:17:45.170 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //button[contains(text(), "Yes")]]])
-17:17:45.248 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (24e864151fef949047b86eb6598ceba6)] -> xpath: //button[contains(text(), "Yes")]]]
-17:17:46.263 INFO - Executing: [find element: By.cssSelector: div[class=entryTitle]])
-17:17:49.307 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class=entryTitle]"}
-  (Session info: chrome=57.0.2987.133)
+14:47:33.339 INFO - Detected dialect: OSS
+14:47:33.369 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Rental Manager / 02 Validate Listing / End To End For Rent MFH, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+14:47:33.394 INFO - Executing: [get: https://hotpads.com/login])
+14:47:35.807 INFO - Done: [get: https://hotpads.com/login]
+14:47:36.847 INFO - Executing: [find element: By.cssSelector: input[name=email]])
+14:47:36.903 INFO - Done: [find element: By.cssSelector: input[name=email]]
+14:47:36.927 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, h, o, t, p, a, d, s, ., c, o, m]])
+14:47:37.224 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=email]], [v, -, k, e, v, i, n, w, o, @, h, o, t, p, a, d, s, ., c, o, m]]
+14:47:37.232 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
+14:47:37.259 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
+14:47:37.264 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]])
+14:47:37.348 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]]
+14:47:38.371 INFO - Executing: [find element: By.cssSelector: input[name=password]])
+14:47:38.413 INFO - Done: [find element: By.cssSelector: input[name=password]]
+14:47:38.419 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=password]], [Z, i, l, l, o, w, 1, 2, 3, 4, !]])
+14:47:38.565 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=password]], [Z, i, l, l, o, w, 1, 2, 3, 4, !]]
+14:47:38.572 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Sign in")]])
+14:47:38.597 INFO - Done: [find element: By.xpath: //button[contains(text(), "Sign in")]]
+14:47:38.602 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Sign in")]]])
+14:47:38.675 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Sign in")]]]
+14:47:39.688 INFO - Executing: [get: https://hotpads.com/rental-manager/])
+14:47:41.871 INFO - Done: [get: https://hotpads.com/rental-manager/]
+14:47:41.894 INFO - Executing: [get current url])
+14:47:41.904 INFO - Done: [get current url]
+14:47:41.911 INFO - Executing: [find elements: By.xpath: //h1[contains(text(), "Welcome to hotpads Rental Manager")]])
+14:47:41.948 INFO - Done: [find elements: By.xpath: //h1[contains(text(), "Welcome to hotpads Rental Manager")]]
+14:47:41.955 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Post to ")]])
+14:47:41.988 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Post to ")]]
+14:47:42.003 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "My listings")]])
+14:47:42.031 INFO - Done: [find elements: By.xpath: //a[contains(text(), "My listings")]]
+14:47:42.042 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Back to ")]])
+14:47:42.076 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Back to ")]]
+14:47:42.082 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "v-kevinwo@hotpads.com")]])
+14:47:42.116 INFO - Done: [find elements: By.xpath: //a[contains(text(), "v-kevinwo@hotpads.com")]]
+14:47:42.126 INFO - Executing: [find element: By.xpath: //a[contains(text(), "Post to ")]])
+14:47:42.153 INFO - Done: [find element: By.xpath: //a[contains(text(), "Post to ")]]
+14:47:42.158 INFO - Executing: [click: 5 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Post to ")]]])
+14:47:42.297 INFO - Done: [click: 5 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Post to ")]]]
+14:47:43.312 INFO - Executing: [get current url])
+14:47:43.321 INFO - Done: [get current url]
+14:47:43.329 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Posting your home, made easy!")]])
+14:47:43.361 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Posting your home, made easy!")]]
+14:47:43.371 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Posting your home, made easy!")]]])
+14:47:43.394 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Posting your home, made easy!")]]]
+14:47:43.399 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Select your listing type:")]])
+14:47:43.435 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Select your listing type:")]]
+14:47:43.438 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Select your listing type:")]]])
+14:47:43.460 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Select your listing type:")]]]
+14:47:43.465 INFO - Executing: [find elements: By.xpath: //div[contains(@id, "property-for-rent")]])
+14:47:43.497 INFO - Done: [find elements: By.xpath: //div[contains(@id, "property-for-rent")]]
+14:47:43.502 INFO - Executing: [is displayed: 11 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(@id, "property-for-rent")]]])
+14:47:43.529 INFO - Done: [is displayed: 11 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(@id, "property-for-rent")]]]
+14:47:43.534 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Room for rent")]])
+14:47:43.569 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Room for rent")]]
+14:47:43.589 INFO - Executing: [is displayed: 12 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Room for rent")]]])
+14:47:43.612 INFO - Done: [is displayed: 12 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Room for rent")]]]
+14:47:43.617 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "View your other listings ")]])
+14:47:43.648 INFO - Done: [find elements: By.xpath: //div[contains(text(), "View your other listings ")]]
+14:47:43.657 INFO - Executing: [is displayed: 13 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "View your other listings ")]]])
+14:47:43.679 INFO - Done: [is displayed: 13 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "View your other listings ")]]]
+14:47:43.683 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "here.")]])
+14:47:43.723 INFO - Done: [find elements: By.xpath: //a[contains(text(), "here.")]]
+14:47:43.728 INFO - Executing: [is displayed: 14 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "here.")]]])
+14:47:43.755 INFO - Done: [is displayed: 14 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "here.")]]]
+14:47:43.763 INFO - Executing: [find element: By.xpath: //div[contains(@id, "property-for-rent")]])
+14:47:43.804 INFO - Done: [find element: By.xpath: //div[contains(@id, "property-for-rent")]]
+14:47:43.809 INFO - Executing: [click: 11 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(@id, "property-for-rent")]]])
+14:47:43.898 INFO - Done: [click: 11 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(@id, "property-for-rent")]]]
+14:47:44.923 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Posting your home, made easy!")]])
+14:47:44.940 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Posting your home, made easy!")]]
+14:47:44.943 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Posting your home, made easy!")]]])
+14:47:44.953 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Posting your home, made easy!")]]]
+14:47:44.957 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Select your property type:")]])
+14:47:44.978 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Select your property type:")]]
+14:47:44.985 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Select your listing type:")]]])
+14:47:45.000 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Select your listing type:")]]]
+14:47:45.005 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "House")]])
+14:47:45.029 INFO - Done: [find elements: By.xpath: //button[contains(text(), "House")]]
+14:47:45.037 INFO - Executing: [is displayed: 15 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "House")]]])
+14:47:45.060 INFO - Done: [is displayed: 15 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "House")]]]
+14:47:45.065 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Townhouse")]])
+14:47:45.093 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Townhouse")]]
+14:47:45.096 INFO - Executing: [is displayed: 16 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Townhouse")]]])
+14:47:45.123 INFO - Done: [is displayed: 16 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Townhouse")]]]
+14:47:45.130 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Condo / Apartment Unit")]])
+14:47:45.156 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Condo / Apartment Unit")]]
+14:47:45.160 INFO - Executing: [is displayed: 17 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Condo / Apartment Unit")]]])
+14:47:45.178 INFO - Done: [is displayed: 17 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Condo / Apartment Unit")]]]
+14:47:45.182 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Apartment Community")]])
+14:47:45.208 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Apartment Community")]]
+14:47:45.211 INFO - Executing: [is displayed: 18 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Apartment Community")]]])
+14:47:45.235 INFO - Done: [is displayed: 18 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Apartment Community")]]]
+14:47:45.239 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "< Go Back")]])
+14:47:45.259 INFO - Done: [find elements: By.xpath: //a[contains(text(), "< Go Back")]]
+14:47:45.269 INFO - Executing: [is displayed: 19 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "< Go Back")]]])
+14:47:45.292 INFO - Done: [is displayed: 19 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "< Go Back")]]]
+14:47:45.297 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Apartment Community")]])
+14:47:45.324 INFO - Done: [find element: By.xpath: //button[contains(text(), "Apartment Community")]]
+14:47:45.330 INFO - Executing: [click: 18 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Apartment Community")]]])
+14:47:45.707 INFO - Done: [click: 18 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Apartment Community")]]]
+14:47:48.720 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Posting your home, made easy!")]])
+14:47:48.732 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Posting your home, made easy!")]]
+14:47:48.735 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Posting your home, made easy!")]]])
+14:47:48.755 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Posting your home, made easy!")]]]
+14:47:48.760 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Total number of units in this apartment community?")]])
+14:47:48.780 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Total number of units in this apartment community?")]]
+14:47:48.791 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Select your listing type:")]]])
+14:47:48.811 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Select your listing type:")]]]
+14:47:48.817 INFO - Executing: [find elements: By.cssSelector: input[name=numberUnits]])
+14:47:48.852 INFO - Done: [find elements: By.cssSelector: input[name=numberUnits]]
+14:47:48.856 INFO - Executing: [is displayed: 20 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=numberUnits]]])
+14:47:48.875 INFO - Done: [is displayed: 20 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=numberUnits]]]
+14:47:48.881 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "< Go Back")]])
+14:47:48.897 INFO - Done: [find elements: By.xpath: //a[contains(text(), "< Go Back")]]
+14:47:48.908 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "< Go Back")]]])
+14:47:48.927 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "< Go Back")]]]
+14:47:48.932 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Continue")]])
+14:47:48.958 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Continue")]]
+14:47:48.965 INFO - Executing: [is displayed: 22 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]])
+14:47:48.990 INFO - Done: [is displayed: 22 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]]
+14:47:48.997 INFO - Executing: [find element: By.cssSelector: input[name=numberUnits]])
+14:47:49.023 INFO - Done: [find element: By.cssSelector: input[name=numberUnits]]
+14:47:49.028 INFO - Executing: [send keys: 20 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=numberUnits]], [1]])
+14:47:49.088 INFO - Done: [send keys: 20 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=numberUnits]], [1]]
+14:47:49.093 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
+14:47:49.102 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
+14:47:49.107 INFO - Executing: [click: 22 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]])
+14:47:49.170 INFO - Done: [click: 22 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]]
+14:47:49.174 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter a valid number of units")]])
+14:47:49.200 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter a valid number of units")]]
+14:47:49.205 INFO - Executing: [is displayed: 23 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter a valid number of units")]]])
+14:47:49.227 INFO - Done: [is displayed: 23 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter a valid number of units")]]]
+14:47:49.231 INFO - Executing: [find element: By.cssSelector: input[name=numberUnits]])
+14:47:49.240 INFO - Done: [find element: By.cssSelector: input[name=numberUnits]]
+14:47:49.243 INFO - Executing: [send keys: 20 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=numberUnits]], [5, 0]])
+14:47:49.294 INFO - Done: [send keys: 20 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=numberUnits]], [5, 0]]
+14:47:49.298 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Continue")]])
+14:47:49.308 INFO - Done: [find element: By.xpath: //button[contains(text(), "Continue")]]
+14:47:49.312 INFO - Executing: [click: 22 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]])
+14:47:49.355 INFO - Done: [click: 22 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Continue")]]]
+14:47:52.364 INFO - Executing: [get current url])
+14:47:52.376 INFO - Done: [get current url]
+14:47:52.397 INFO - Executing: [find elements: By.xpath: //h1[contains(text(), "For rent: apartment community")]])
+14:47:52.422 INFO - Done: [find elements: By.xpath: //h1[contains(text(), "For rent: apartment community")]]
+14:47:52.424 INFO - Executing: [is displayed: 24 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //h1[contains(text(), "For rent: apartment community")]]])
+14:47:52.442 INFO - Done: [is displayed: 24 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //h1[contains(text(), "For rent: apartment community")]]]
+14:47:53.456 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Save listing")]])
+14:47:53.478 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Save listing")]]
+14:47:53.486 INFO - Executing: [is enabled: 25 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Save listing")]]])
+14:47:53.504 INFO - Done: [is enabled: 25 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Save listing")]]]
+14:47:54.531 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Location")]])
+14:47:54.553 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Location")]]
+14:47:54.558 INFO - Executing: [is displayed: 26 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Location")]]])
+14:47:54.576 INFO - Done: [is displayed: 26 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Location")]]]
+14:47:54.580 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Building Details")]])
+14:47:54.605 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Building Details")]]
+14:47:54.613 INFO - Executing: [is displayed: 27 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Building Details")]]])
+14:47:54.632 INFO - Done: [is displayed: 27 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Building Details")]]]
+14:47:54.635 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Building Photos")]])
+14:47:54.659 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Building Photos")]]
+14:47:54.662 INFO - Executing: [is displayed: 28 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Building Photos")]]])
+14:47:54.688 INFO - Done: [is displayed: 28 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Building Photos")]]]
+14:47:54.692 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Community Amenities")]])
+14:47:54.719 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Community Amenities")]]
+14:47:54.722 INFO - Executing: [is displayed: 29 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Community Amenities")]]])
+14:47:54.740 INFO - Done: [is displayed: 29 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Community Amenities")]]]
+14:47:54.744 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Unit Amenities")]])
+14:47:54.767 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Unit Amenities")]]
+14:47:54.772 INFO - Executing: [is displayed: 30 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Unit Amenities")]]])
+14:47:54.796 INFO - Done: [is displayed: 30 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Unit Amenities")]]]
+14:47:54.800 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Floorplans")]])
+14:47:54.824 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Floorplans")]]
+14:47:54.830 INFO - Executing: [is displayed: 31 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Floorplans")]]])
+14:47:54.850 INFO - Done: [is displayed: 31 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Floorplans")]]]
+14:47:54.853 INFO - Executing: [find elements: By.xpath: //a[contains(text(), "Contact Information")]])
+14:47:54.879 INFO - Done: [find elements: By.xpath: //a[contains(text(), "Contact Information")]]
+14:47:54.882 INFO - Executing: [is displayed: 33 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Contact Information")]]])
+14:47:54.899 INFO - Done: [is displayed: 33 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Contact Information")]]]
+14:47:54.912 INFO - Executing: [find element: By.cssSelector: input[name=street]])
+14:47:54.938 INFO - Done: [find element: By.cssSelector: input[name=street]]
+14:47:54.945 INFO - Executing: [send keys: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], []])
+14:47:54.987 INFO - Done: [send keys: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], []]
+14:47:54.996 INFO - Executing: [find elements: By.cssSelector: input[name=street]])
+14:47:55.018 INFO - Done: [find elements: By.cssSelector: input[name=street]]
+14:47:55.023 INFO - Executing: [get element attribute: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], value])
+14:47:55.033 INFO - Done: [get element attribute: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], value]
+14:47:55.037 INFO - Executing: [find elements: By.cssSelector: input[name=contactEmail]])
+14:47:55.070 INFO - Done: [find elements: By.cssSelector: input[name=contactEmail]]
+14:47:55.079 INFO - Executing: [get element attribute: 35 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactEmail]], value])
+14:47:55.087 INFO - Done: [get element attribute: 35 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactEmail]], value]
+14:47:55.103 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Activate Listing")]])
+14:47:55.132 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Activate Listing")]]
+14:47:55.136 INFO - Executing: [is enabled: 36 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Activate Listing")]]])
+14:47:55.152 INFO - Done: [is enabled: 36 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Activate Listing")]]]
+14:47:55.159 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Activate Listing")]])
+14:47:55.186 INFO - Done: [find element: By.xpath: //button[contains(text(), "Activate Listing")]]
+14:47:55.191 INFO - Executing: [click: 36 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Activate Listing")]]])
+14:47:55.289 INFO - Done: [click: 36 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Activate Listing")]]]
+14:47:55.296 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Activate Listing")]])
+14:47:55.319 INFO - Done: [find element: By.xpath: //button[contains(text(), "Activate Listing")]]
+14:47:55.323 INFO - Executing: [click: 36 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Activate Listing")]]])
+14:47:55.392 INFO - Done: [click: 36 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Activate Listing")]]]
+14:47:56.408 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your street address.")]])
+14:47:56.432 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your street address.")]]
+14:47:56.437 INFO - Executing: [is displayed: 37 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your street address.")]]])
+14:47:56.456 INFO - Done: [is displayed: 37 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your street address.")]]]
+14:47:56.461 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your city.")]])
+14:47:56.496 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your city.")]]
+14:47:56.499 INFO - Executing: [is displayed: 38 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your city.")]]])
+14:47:56.516 INFO - Done: [is displayed: 38 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your city.")]]]
+14:47:56.522 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your state.")]])
+14:47:56.555 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your state.")]]
+14:47:56.557 INFO - Executing: [is displayed: 39 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your state.")]]])
+14:47:56.576 INFO - Done: [is displayed: 39 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your state.")]]]
+14:47:56.579 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your zip code.")]])
+14:47:56.603 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your zip code.")]]
+14:47:56.608 INFO - Executing: [is displayed: 40 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your zip code.")]]])
+14:47:56.632 INFO - Done: [is displayed: 40 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your zip code.")]]]
+14:47:56.635 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter the property name.")]])
+14:47:56.654 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter the property name.")]]
+14:47:56.658 INFO - Executing: [is displayed: 41 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter the property name.")]]])
+14:47:56.689 INFO - Done: [is displayed: 41 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter the property name.")]]]
+14:47:56.693 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please provide a description.")]])
+14:47:56.714 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please provide a description.")]]
+14:47:56.720 INFO - Executing: [is displayed: 42 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please provide a description.")]]])
+14:47:56.744 INFO - Done: [is displayed: 42 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please provide a description.")]]]
+14:47:56.749 INFO - Executing: [find elements: By.xpath: //span[contains(text(), "Please enter your phone number.")]])
+14:47:56.773 INFO - Done: [find elements: By.xpath: //span[contains(text(), "Please enter your phone number.")]]
+14:47:56.777 INFO - Executing: [is displayed: 43 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your phone number.")]]])
+14:47:56.798 INFO - Done: [is displayed: 43 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Please enter your phone number.")]]]
+14:47:56.802 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]])
+14:47:56.827 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]]
+14:47:56.832 INFO - Executing: [is displayed: 44 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]]])
+14:47:56.855 INFO - Done: [is displayed: 44 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Please fix any errors above before activating your listing.")]]]
+14:47:56.867 INFO - Executing: [find element: By.cssSelector: input[name=street]])
+14:47:56.876 INFO - Done: [find element: By.cssSelector: input[name=street]]
+14:47:56.886 INFO - Executing: [send keys: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], [3, 3,  , V, i, s, t, a,  , R, d]])
+14:47:57.149 INFO - Done: [send keys: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], [3, 3,  , V, i, s, t, a,  , R, d]]
+14:47:57.153 INFO - Executing: [find element: By.cssSelector: input[name=city]])
+14:47:57.182 INFO - Done: [find element: By.cssSelector: input[name=city]]
+14:47:57.186 INFO - Executing: [send keys: 45 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=city]], [A, l, a, m, e, d, a]])
+14:47:57.378 INFO - Done: [send keys: 45 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=city]], [A, l, a, m, e, d, a]]
+14:47:57.385 INFO - Executing: [find element: By.cssSelector: select[name=state]])
+14:47:57.409 INFO - Done: [find element: By.cssSelector: select[name=state]]
+14:47:57.413 INFO - Executing: [send keys: 46 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=state]], [C, A]])
+14:47:57.496 INFO - Done: [send keys: 46 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=state]], [C, A]]
+14:47:57.501 INFO - Executing: [find element: By.cssSelector: input[name=zip]])
+14:47:57.528 INFO - Done: [find element: By.cssSelector: input[name=zip]]
+14:47:57.533 INFO - Executing: [send keys: 47 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=zip]], [9, 4, 5, 0, 2]])
+14:47:57.680 INFO - Done: [send keys: 47 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=zip]], [9, 4, 5, 0, 2]]
+14:47:57.685 INFO - Executing: [find elements: By.cssSelector: input[name=street]])
+14:47:57.699 INFO - Done: [find elements: By.cssSelector: input[name=street]]
+14:47:57.702 INFO - Executing: [get element attribute: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], value])
+14:47:57.713 INFO - Done: [get element attribute: 34 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=street]], value]
+14:47:57.722 INFO - Executing: [find elements: By.cssSelector: input[name=city]])
+14:47:57.786 INFO - Done: [find elements: By.cssSelector: input[name=city]]
+14:47:57.790 INFO - Executing: [get element attribute: 45 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=city]], value])
+14:47:57.804 INFO - Done: [get element attribute: 45 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=city]], value]
+14:47:57.808 INFO - Executing: [find elements: By.cssSelector: select[name=state]])
+14:47:57.839 INFO - Done: [find elements: By.cssSelector: select[name=state]]
+14:47:57.844 INFO - Executing: [get element attribute: 46 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=state]], value])
+14:47:57.867 INFO - Done: [get element attribute: 46 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=state]], value]
+14:47:57.874 INFO - Executing: [find elements: By.cssSelector: input[name=zip]])
+14:47:57.905 INFO - Done: [find elements: By.cssSelector: input[name=zip]]
+14:47:57.921 INFO - Executing: [get element attribute: 47 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=zip]], value])
+14:47:57.936 INFO - Done: [get element attribute: 47 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=zip]], value]
+14:47:57.951 INFO - Executing: [find element: By.cssSelector: input[name=listingTitle]])
+14:47:57.981 INFO - Done: [find element: By.cssSelector: input[name=listingTitle]]
+14:47:57.986 INFO - Executing: [send keys: 48 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=listingTitle]], [T, e, s, t,  , l, i, s, t, i, n, g,  , t, i, t, l, e]])
+14:47:58.351 INFO - Done: [send keys: 48 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=listingTitle]], [T, e, s, t,  , l, i, s, t, i, n, g,  , t, i, t, l, e]]
+14:47:58.355 INFO - Executing: [find element: By.cssSelector: textarea[name=description]])
+14:47:58.378 INFO - Done: [find element: By.cssSelector: textarea[name=description]]
+14:47:58.383 INFO - Executing: [send keys: 49 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: textarea[name=description]], [T, h, i, s,  , i, s,  , a, n,  , a, w, e, s, o, m, e,  , p, l, a, c, e, !]])
+14:47:58.800 INFO - Done: [send keys: 49 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: textarea[name=description]], [T, h, i, s,  , i, s,  , a, n,  , a, w, e, s, o, m, e,  , p, l, a, c, e, !]]
+14:47:58.803 INFO - Executing: [find element: By.cssSelector: input[name=leaseTerms]])
+14:47:58.834 INFO - Done: [find element: By.cssSelector: input[name=leaseTerms]]
+14:47:58.838 INFO - Executing: [send keys: 50 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=leaseTerms]], [M, o, n, t, h, -, t, o, -, m, o, n, t, h]])
+14:47:59.089 INFO - Done: [send keys: 50 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=leaseTerms]], [M, o, n, t, h, -, t, o, -, m, o, n, t, h]]
+14:47:59.093 INFO - Executing: [find element: By.cssSelector: input[name=website]])
+14:47:59.114 INFO - Done: [find element: By.cssSelector: input[name=website]]
+14:47:59.118 INFO - Executing: [send keys: 51 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=website]], [h, o, t, p, a, d, s, ., c, o, m]])
+14:47:59.368 INFO - Done: [send keys: 51 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=website]], [h, o, t, p, a, d, s, ., c, o, m]]
+14:47:59.372 INFO - Executing: [find element: By.cssSelector: input[name=contactSunday]])
+14:47:59.399 INFO - Done: [find element: By.cssSelector: input[name=contactSunday]]
+14:47:59.403 INFO - Executing: [send keys: 52 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSunday]], [1, 0, -, 6, p]])
+14:47:59.537 INFO - Done: [send keys: 52 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSunday]], [1, 0, -, 6, p]]
+14:47:59.540 INFO - Executing: [find element: By.cssSelector: input[name=contactMonday]])
+14:47:59.565 INFO - Done: [find element: By.cssSelector: input[name=contactMonday]]
+14:47:59.568 INFO - Executing: [send keys: 53 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactMonday]], [1, 0, -, 6, p]])
+14:47:59.682 INFO - Done: [send keys: 53 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactMonday]], [1, 0, -, 6, p]]
+14:47:59.685 INFO - Executing: [find element: By.cssSelector: input[name=contactTuesday]])
+14:47:59.706 INFO - Done: [find element: By.cssSelector: input[name=contactTuesday]]
+14:47:59.711 INFO - Executing: [send keys: 54 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactTuesday]], [1, 0, -, 6, p]])
+14:47:59.817 INFO - Done: [send keys: 54 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactTuesday]], [1, 0, -, 6, p]]
+14:47:59.820 INFO - Executing: [find element: By.cssSelector: input[name=contactWednesday]])
+14:47:59.854 INFO - Done: [find element: By.cssSelector: input[name=contactWednesday]]
+14:47:59.858 INFO - Executing: [send keys: 55 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactWednesday]], [1, 0, -, 6, p]])
+14:47:59.977 INFO - Done: [send keys: 55 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactWednesday]], [1, 0, -, 6, p]]
+14:47:59.985 INFO - Executing: [find element: By.cssSelector: input[name=contactThursday]])
+14:48:00.005 INFO - Done: [find element: By.cssSelector: input[name=contactThursday]]
+14:48:00.008 INFO - Executing: [send keys: 56 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactThursday]], [1, 0, -, 6, p]])
+14:48:00.122 INFO - Done: [send keys: 56 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactThursday]], [1, 0, -, 6, p]]
+14:48:00.126 INFO - Executing: [find element: By.cssSelector: input[name=contactFriday]])
+14:48:00.149 INFO - Done: [find element: By.cssSelector: input[name=contactFriday]]
+14:48:00.153 INFO - Executing: [send keys: 57 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFriday]], [1, 0, -, 6, p]])
+14:48:00.277 INFO - Done: [send keys: 57 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFriday]], [1, 0, -, 6, p]]
+14:48:00.281 INFO - Executing: [find element: By.cssSelector: input[name=contactSaturday]])
+14:48:00.301 INFO - Done: [find element: By.cssSelector: input[name=contactSaturday]]
+14:48:00.304 INFO - Executing: [send keys: 58 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSaturday]], [1, 0, -, 6, p]])
+14:48:00.412 INFO - Done: [send keys: 58 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSaturday]], [1, 0, -, 6, p]]
+14:48:00.416 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Property Logo")]])
+14:48:00.438 INFO - Done: [find element: By.xpath: //span[contains(text(), "Property Logo")]]
+14:48:00.442 INFO - Executing: [send keys: 59 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Property Logo")]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, b, e, w, a, r, e, s, i, g, n, ., j, p, e, g]])
+14:48:01.134 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: cannot focus element
+  (Session info: chrome=58.0.3029.81)
   (Driver info: chromedriver=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.81 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 57 milliseconds
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
-System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:14e9:5c61:985:fcfd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
+System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:8a5:eb74:2224:a3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.vRAbw6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 24e864151fef949047b86eb6598ceba6
-*** Element info: {Using=css selector, value=div[class=entryTitle]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.HnGmjE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.81, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a666a1292351e04f79acb0fdb86ceb3c
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -84,48 +350,116 @@ Session ID: 24e864151fef949047b86eb6598ceba6
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:468)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
-	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-17:17:49.309 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":"div[class=entryTitle]"}
-  (Session info: chrome=57.0.2987.133)
+14:48:01.136 WARN - Exception: unknown error: cannot focus element
+  (Session info: chrome=58.0.3029.81)
   (Driver info: chromedriver=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.81 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 57 milliseconds
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
-System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:14e9:5c61:985:fcfd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
+System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:8a5:eb74:2224:a3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.vRAbw6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 24e864151fef949047b86eb6598ceba6
-*** Element info: {Using=css selector, value=div[class=entryTitle]}
-17:17:50.443 INFO - Executing: [find element: By.xpath: //a[contains(text(), "[ Delete listing ]")]])
-17:17:51.220 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(), "[ Delete listing ]")]"}
-  (Session info: chrome=57.0.2987.133)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.HnGmjE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.81, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a666a1292351e04f79acb0fdb86ceb3c
+14:48:01.202 INFO - Executing: [find elements: By.cssSelector: input[name=listingTitle]])
+14:48:01.222 INFO - Done: [find elements: By.cssSelector: input[name=listingTitle]]
+14:48:01.226 INFO - Executing: [get element attribute: 48 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=listingTitle]], value])
+14:48:01.235 INFO - Done: [get element attribute: 48 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=listingTitle]], value]
+14:48:01.240 INFO - Executing: [find elements: By.cssSelector: textarea[name=description]])
+14:48:01.267 INFO - Done: [find elements: By.cssSelector: textarea[name=description]]
+14:48:01.273 INFO - Executing: [get element attribute: 49 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: textarea[name=description]], value])
+14:48:01.284 INFO - Done: [get element attribute: 49 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: textarea[name=description]], value]
+14:48:01.288 INFO - Executing: [find elements: By.cssSelector: input[name=leaseTerms]])
+14:48:01.320 INFO - Done: [find elements: By.cssSelector: input[name=leaseTerms]]
+14:48:01.325 INFO - Executing: [get element attribute: 50 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=leaseTerms]], value])
+14:48:01.336 INFO - Done: [get element attribute: 50 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=leaseTerms]], value]
+14:48:01.347 INFO - Executing: [find elements: By.cssSelector: input[name=website]])
+14:48:01.380 INFO - Done: [find elements: By.cssSelector: input[name=website]]
+14:48:01.384 INFO - Executing: [get element attribute: 51 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=website]], value])
+14:48:01.398 INFO - Done: [get element attribute: 51 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=website]], value]
+14:48:01.403 INFO - Executing: [find elements: By.cssSelector: input[name=contactSunday]])
+14:48:01.445 INFO - Done: [find elements: By.cssSelector: input[name=contactSunday]]
+14:48:01.451 INFO - Executing: [get element attribute: 52 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSunday]], value])
+14:48:01.462 INFO - Done: [get element attribute: 52 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSunday]], value]
+14:48:01.466 INFO - Executing: [find elements: By.cssSelector: input[name=contactMonday]])
+14:48:01.497 INFO - Done: [find elements: By.cssSelector: input[name=contactMonday]]
+14:48:01.503 INFO - Executing: [get element attribute: 53 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactMonday]], value])
+14:48:01.518 INFO - Done: [get element attribute: 53 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactMonday]], value]
+14:48:01.525 INFO - Executing: [find elements: By.cssSelector: input[name=contactTuesday]])
+14:48:01.554 INFO - Done: [find elements: By.cssSelector: input[name=contactTuesday]]
+14:48:01.565 INFO - Executing: [get element attribute: 54 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactTuesday]], value])
+14:48:01.578 INFO - Done: [get element attribute: 54 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactTuesday]], value]
+14:48:01.584 INFO - Executing: [find elements: By.cssSelector: input[name=contactWednesday]])
+14:48:01.617 INFO - Done: [find elements: By.cssSelector: input[name=contactWednesday]]
+14:48:01.620 INFO - Executing: [get element attribute: 55 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactWednesday]], value])
+14:48:01.631 INFO - Done: [get element attribute: 55 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactWednesday]], value]
+14:48:01.636 INFO - Executing: [find elements: By.cssSelector: input[name=contactThursday]])
+14:48:01.666 INFO - Done: [find elements: By.cssSelector: input[name=contactThursday]]
+14:48:01.669 INFO - Executing: [get element attribute: 56 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactThursday]], value])
+14:48:01.686 INFO - Done: [get element attribute: 56 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactThursday]], value]
+14:48:01.692 INFO - Executing: [find elements: By.cssSelector: input[name=contactFriday]])
+14:48:01.717 INFO - Done: [find elements: By.cssSelector: input[name=contactFriday]]
+14:48:01.724 INFO - Executing: [get element attribute: 57 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFriday]], value])
+14:48:01.734 INFO - Done: [get element attribute: 57 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFriday]], value]
+14:48:01.739 INFO - Executing: [find elements: By.cssSelector: input[name=contactSaturday]])
+14:48:01.766 INFO - Done: [find elements: By.cssSelector: input[name=contactSaturday]]
+14:48:01.772 INFO - Executing: [get element attribute: 58 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSaturday]], value])
+14:48:01.784 INFO - Done: [get element attribute: 58 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactSaturday]], value]
+14:48:01.797 INFO - Executing: [find element: By.cssSelector: input[name=name]])
+14:48:01.820 INFO - Done: [find element: By.cssSelector: input[name=name]]
+14:48:01.827 INFO - Executing: [send keys: 60 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=name]], [T, e, s, t,  , f, l, o, o, r, p, l, a, n,  , n, a, m, e]])
+14:48:02.118 INFO - Done: [send keys: 60 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=name]], [T, e, s, t,  , f, l, o, o, r, p, l, a, n,  , n, a, m, e]]
+14:48:02.126 INFO - Executing: [find element: By.cssSelector: select[name=beds]])
+14:48:02.151 INFO - Done: [find element: By.cssSelector: select[name=beds]]
+14:48:02.154 INFO - Executing: [send keys: 61 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=beds]], [3]])
+14:48:02.223 INFO - Done: [send keys: 61 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=beds]], [3]]
+14:48:02.228 INFO - Executing: [find element: By.cssSelector: input[name=baths]])
+14:48:02.250 INFO - Done: [find element: By.cssSelector: input[name=baths]]
+14:48:02.254 INFO - Executing: [send keys: 62 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=baths]], [2, ., 5]])
+14:48:02.337 INFO - Done: [send keys: 62 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=baths]], [2, ., 5]]
+14:48:02.343 INFO - Executing: [find element: By.cssSelector: input[name=price]])
+14:48:02.367 INFO - Done: [find element: By.cssSelector: input[name=price]]
+14:48:02.371 INFO - Executing: [send keys: 63 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=price]], [7, 5, 0, 0]])
+14:48:02.486 INFO - Done: [send keys: 63 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=price]], [7, 5, 0, 0]]
+14:48:02.493 INFO - Executing: [find element: By.xpath: //a[contains(text(), "Expand All Floorplans")]])
+14:48:02.516 INFO - Done: [find element: By.xpath: //a[contains(text(), "Expand All Floorplans")]]
+14:48:02.520 INFO - Executing: [click: 32 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Floorplans")]]])
+14:48:02.599 INFO - Done: [click: 32 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //a[contains(text(), "Floorplans")]]]
+14:48:02.604 INFO - Executing: [find element: By.xpath: //div[contains(text(), "Floorplan Photos")]])
+14:48:02.632 INFO - Done: [find element: By.xpath: //div[contains(text(), "Floorplan Photos")]]
+14:48:02.635 INFO - Executing: [click: 64 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Floorplan Photos")]]])
+14:48:02.715 INFO - Done: [click: 64 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Floorplan Photos")]]]
+14:48:02.718 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Layout / Floorplan")]])
+14:48:02.748 INFO - Done: [find element: By.xpath: //span[contains(text(), "Layout / Floorplan")]]
+14:48:02.753 INFO - Executing: [send keys: 65 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Layout / Floorplan")]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, b, e, w, a, r, e, s, i, g, n, ., j, p, e, g]])
+14:48:03.129 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: cannot focus element
+  (Session info: chrome=58.0.3029.81)
   (Driver info: chromedriver=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 46 milliseconds
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
-System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:14e9:5c61:985:fcfd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
+System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:8a5:eb74:2224:a3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.vRAbw6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 24e864151fef949047b86eb6598ceba6
-*** Element info: {Using=xpath, value=//a[contains(text(), "[ Delete listing ]")]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.HnGmjE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.81, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a666a1292351e04f79acb0fdb86ceb3c
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -133,48 +467,48 @@ Session ID: 24e864151fef949047b86eb6598ceba6
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
-	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-17:17:51.221 WARN - Exception: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(), "[ Delete listing ]")]"}
-  (Session info: chrome=57.0.2987.133)
+14:48:03.130 WARN - Exception: unknown error: cannot focus element
+  (Session info: chrome=58.0.3029.81)
   (Driver info: chromedriver=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 46 milliseconds
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
-System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:14e9:5c61:985:fcfd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
+System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:8a5:eb74:2224:a3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.vRAbw6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 24e864151fef949047b86eb6598ceba6
-*** Element info: {Using=xpath, value=//a[contains(text(), "[ Delete listing ]")]}
-17:17:51.331 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Yes")]])
-17:17:52.144 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), "Yes")]"}
-  (Session info: chrome=57.0.2987.133)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.HnGmjE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.81, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a666a1292351e04f79acb0fdb86ceb3c
+14:48:03.177 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Photos")]])
+14:48:03.198 INFO - Done: [find element: By.xpath: //span[contains(text(), "Photos")]]
+14:48:03.203 INFO - Executing: [send keys: 66 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Photos")]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, b, e, w, a, r, e, s, i, g, n, ., j, p, e, g]])
+14:48:03.568 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: cannot focus element
+  (Session info: chrome=58.0.3029.81)
   (Driver info: chromedriver=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 42 milliseconds
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
-System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:14e9:5c61:985:fcfd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
+System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:8a5:eb74:2224:a3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.vRAbw6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 24e864151fef949047b86eb6598ceba6
-*** Element info: {Using=xpath, value=//button[contains(text(), "Yes")]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.HnGmjE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.81, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a666a1292351e04f79acb0fdb86ceb3c
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -182,32 +516,152 @@ Session ID: 24e864151fef949047b86eb6598ceba6
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
-	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
-	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:332)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:355)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:50)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:29)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-17:17:52.145 WARN - Exception: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), "Yes")]"}
-  (Session info: chrome=57.0.2987.133)
+14:48:03.568 WARN - Exception: unknown error: cannot focus element
+  (Session info: chrome=58.0.3029.81)
   (Driver info: chromedriver=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f),platform=Mac OS X 10.12.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 42 milliseconds
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
-System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:14e9:5c61:985:fcfd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
+System info: host: 'kevinwo01.local', ip: 'fe80:0:0:0:8a5:eb74:2224:a3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_102'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.vRAbw6}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 24e864151fef949047b86eb6598ceba6
-*** Element info: {Using=xpath, value=//button[contains(text(), "Yes")]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455517 (2c6d2707d8ea850c862f04ac066724273981e88f), userDataDir=/var/folders/cc/6fl2xwcd08bghq_l90t636s00000gq/T/.org.chromium.Chromium.HnGmjE}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.81, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a666a1292351e04f79acb0fdb86ceb3c
+14:48:03.613 INFO - Executing: [find elements: By.cssSelector: input[name=name]])
+14:48:03.634 INFO - Done: [find elements: By.cssSelector: input[name=name]]
+14:48:03.638 INFO - Executing: [get element attribute: 67 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=name]], value])
+14:48:03.648 INFO - Done: [get element attribute: 67 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=name]], value]
+14:48:03.652 INFO - Executing: [find elements: By.cssSelector: select[name=beds]])
+14:48:03.685 INFO - Done: [find elements: By.cssSelector: select[name=beds]]
+14:48:03.689 INFO - Executing: [get element attribute: 68 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=beds]], value])
+14:48:03.700 INFO - Done: [get element attribute: 68 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: select[name=beds]], value]
+14:48:03.703 INFO - Executing: [find elements: By.cssSelector: input[name=baths]])
+14:48:03.727 INFO - Done: [find elements: By.cssSelector: input[name=baths]]
+14:48:03.735 INFO - Executing: [get element attribute: 69 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=baths]], value])
+14:48:03.751 INFO - Done: [get element attribute: 69 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=baths]], value]
+14:48:03.755 INFO - Executing: [find elements: By.cssSelector: input[name=price]])
+14:48:03.790 INFO - Done: [find elements: By.cssSelector: input[name=price]]
+14:48:03.796 INFO - Executing: [get element attribute: 70 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=price]], value])
+14:48:03.804 INFO - Done: [get element attribute: 70 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=price]], value]
+14:48:03.820 INFO - Executing: [find element: By.cssSelector: input[name=contactName]])
+14:48:03.844 INFO - Done: [find element: By.cssSelector: input[name=contactName]]
+14:48:03.847 INFO - Executing: [send keys: 71 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactName]], [Q, A,  , T, e, s, t]])
+14:48:04.009 INFO - Done: [send keys: 71 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactName]], [Q, A,  , T, e, s, t]]
+14:48:04.014 INFO - Executing: [find element: By.cssSelector: input[name=contactPhone]])
+14:48:04.038 INFO - Done: [find element: By.cssSelector: input[name=contactPhone]]
+14:48:04.043 INFO - Executing: [send keys: 72 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactPhone]], [4, 1, 5, -, 5, 5, 5, -, 5, 5, 5, 5]])
+14:48:04.294 INFO - Done: [send keys: 72 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactPhone]], [4, 1, 5, -, 5, 5, 5, -, 5, 5, 5, 5]]
+14:48:04.299 INFO - Executing: [find element: By.cssSelector: input[name=contactFax]])
+14:48:04.321 INFO - Done: [find element: By.cssSelector: input[name=contactFax]]
+14:48:04.328 INFO - Executing: [send keys: 73 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFax]], [4, 1, 5, -, 4, 4, 4, -, 4, 4, 4, 4]])
+14:48:04.540 INFO - Done: [send keys: 73 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFax]], [4, 1, 5, -, 4, 4, 4, -, 4, 4, 4, 4]]
+14:48:04.546 INFO - Executing: [find element: By.cssSelector: input[name=ccToEmail]])
+14:48:04.569 INFO - Done: [find element: By.cssSelector: input[name=ccToEmail]]
+14:48:04.572 INFO - Executing: [send keys: 74 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=ccToEmail]], [q, a, @, z, r, m, ., c, o, m]])
+14:48:04.774 INFO - Done: [send keys: 74 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=ccToEmail]], [q, a, @, z, r, m, ., c, o, m]]
+14:48:04.780 INFO - Executing: [find elements: By.cssSelector: input[name=contactName]])
+14:48:04.803 INFO - Done: [find elements: By.cssSelector: input[name=contactName]]
+14:48:04.806 INFO - Executing: [get element attribute: 71 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactName]], value])
+14:48:04.816 INFO - Done: [get element attribute: 71 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactName]], value]
+14:48:04.820 INFO - Executing: [find elements: By.cssSelector: input[name=contactPhone]])
+14:48:04.852 INFO - Done: [find elements: By.cssSelector: input[name=contactPhone]]
+14:48:04.860 INFO - Executing: [get element attribute: 72 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactPhone]], value])
+14:48:04.874 INFO - Done: [get element attribute: 72 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactPhone]], value]
+14:48:04.885 INFO - Executing: [find elements: By.cssSelector: input[name=contactFax]])
+14:48:04.922 INFO - Done: [find elements: By.cssSelector: input[name=contactFax]]
+14:48:04.928 INFO - Executing: [get element attribute: 73 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFax]], value])
+14:48:04.938 INFO - Done: [get element attribute: 73 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=contactFax]], value]
+14:48:04.946 INFO - Executing: [find elements: By.cssSelector: input[name=ccToEmail]])
+14:48:04.972 INFO - Done: [find elements: By.cssSelector: input[name=ccToEmail]]
+14:48:04.977 INFO - Executing: [get element attribute: 74 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=ccToEmail]], value])
+14:48:04.986 INFO - Done: [get element attribute: 74 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[name=ccToEmail]], value]
+14:48:04.995 INFO - Executing: [find element: By.cssSelector: input[type=file]])
+14:48:05.021 INFO - Done: [find element: By.cssSelector: input[type=file]]
+14:48:05.032 INFO - Executing: [send keys: 75 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[type=file]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, c, a, n, a, i, m, a, _, v, e, n, e, z, u, e, l, a, ., j, p, g]])
+14:48:05.074 INFO - Done: [send keys: 75 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[type=file]], [/, U, s, e, r, s, /, k, e, v, i, n, w, o, /, D, o, c, u, m, e, n, t, s, /, z, r, m, /, t, e, s, t, _, p, h, o, t, o, s, /, c, a, n, a, i, m, a, _, v, e, n, e, z, u, e, l, a, ., j, p, g]]
+14:48:06.084 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Amenities (optional)")]])
+14:48:06.107 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Amenities (optional)")]]
+14:48:06.114 INFO - Executing: [is displayed: 76 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Amenities (optional)")]]])
+14:48:06.134 INFO - Done: [is displayed: 76 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Amenities (optional)")]]]
+14:48:06.139 INFO - Executing: [find element: By.xpath: //span[contains(text(), "A/C")]])
+14:48:06.166 INFO - Done: [find element: By.xpath: //span[contains(text(), "A/C")]]
+14:48:06.175 INFO - Executing: [click: 77 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "A/C")]]])
+14:48:06.240 INFO - Done: [click: 77 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "A/C")]]]
+14:48:06.246 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Balcony / Deck")]])
+14:48:06.273 INFO - Done: [find element: By.xpath: //span[contains(text(), "Balcony / Deck")]]
+14:48:06.279 INFO - Executing: [click: 78 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Balcony / Deck")]]])
+14:48:06.342 INFO - Done: [click: 78 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Balcony / Deck")]]]
+14:48:06.350 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Furnished")]])
+14:48:06.371 INFO - Done: [find element: By.xpath: //span[contains(text(), "Furnished")]]
+14:48:06.374 INFO - Executing: [click: 79 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Furnished")]]])
+14:48:06.457 INFO - Done: [click: 79 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Furnished")]]]
+14:48:06.462 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Hardwood Floor")]])
+14:48:06.522 INFO - Done: [find element: By.xpath: //span[contains(text(), "Hardwood Floor")]]
+14:48:06.527 INFO - Executing: [click: 80 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Hardwood Floor")]]])
+14:48:06.601 INFO - Done: [click: 80 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Hardwood Floor")]]]
+14:48:06.605 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Wheelchair Access")]])
+14:48:06.634 INFO - Done: [find element: By.xpath: //span[contains(text(), "Wheelchair Access")]]
+14:48:06.638 INFO - Executing: [click: 81 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Wheelchair Access")]]])
+14:48:06.739 INFO - Done: [click: 81 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Wheelchair Access")]]]
+14:48:06.743 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Garage Parking")]])
+14:48:06.779 INFO - Done: [find element: By.xpath: //span[contains(text(), "Garage Parking")]]
+14:48:06.782 INFO - Executing: [click: 82 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Garage Parking")]]])
+14:48:06.848 INFO - Done: [click: 82 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Garage Parking")]]]
+14:48:06.852 INFO - Executing: [find element: By.xpath: //span[contains(text(), "Off-street Parking")]])
+14:48:06.884 INFO - Done: [find element: By.xpath: //span[contains(text(), "Off-street Parking")]]
+14:48:06.888 INFO - Executing: [click: 83 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Off-street Parking")]]])
+14:48:06.951 INFO - Done: [click: 83 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "Off-street Parking")]]]
+14:48:07.968 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Laundry")]])
+14:48:07.992 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Laundry")]]
+14:48:07.997 INFO - Executing: [is displayed: 84 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Laundry")]]])
+14:48:08.019 INFO - Done: [is displayed: 84 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Laundry")]]]
+14:48:08.022 INFO - Executing: [find element: By.xpath: //span[contains(text(), "None")]])
+14:48:08.052 INFO - Done: [find element: By.xpath: //span[contains(text(), "None")]]
+14:48:08.055 INFO - Executing: [click: 85 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "None")]]])
+14:48:08.135 INFO - Done: [click: 85 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "None")]]]
+14:48:09.153 INFO - Executing: [find elements: By.xpath: //div[contains(text(), "Pets")]])
+14:48:09.172 INFO - Done: [find elements: By.xpath: //div[contains(text(), "Pets")]]
+14:48:09.186 INFO - Executing: [is displayed: 86 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Pets")]]])
+14:48:09.216 INFO - Done: [is displayed: 86 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //div[contains(text(), "Pets")]]]
+14:48:09.220 INFO - Executing: [find element: By.xpath: //span[contains(text(), "No pets allowed")]])
+14:48:09.248 INFO - Done: [find element: By.xpath: //span[contains(text(), "No pets allowed")]]
+14:48:09.251 INFO - Executing: [click: 87 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "No pets allowed")]]])
+14:48:09.317 INFO - Done: [click: 87 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //span[contains(text(), "No pets allowed")]]]
+14:48:10.339 INFO - Executing: [find elements: By.cssSelector: input[placeholder="List amenities found in units"]])
+14:48:10.366 INFO - Done: [find elements: By.cssSelector: input[placeholder="List amenities found in units"]]
+14:48:10.369 INFO - Executing: [is displayed: 88 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[placeholder="List amenities found in units"]]])
+14:48:10.388 INFO - Done: [is displayed: 88 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[placeholder="List amenities found in units"]]]
+14:48:10.391 INFO - Executing: [find element: By.cssSelector: input[placeholder="List amenities found in units"]])
+14:48:10.420 INFO - Done: [find element: By.cssSelector: input[placeholder="List amenities found in units"]]
+14:48:10.424 INFO - Executing: [send keys: 88 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[placeholder="List amenities found in units"]], [t, e, s, t, i, n, g]])
+14:48:10.522 INFO - Done: [send keys: 88 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> css selector: input[placeholder="List amenities found in units"]], [t, e, s, t, i, n, g]]
+14:48:10.526 INFO - Executing: [find element: By.xpath: //button[contains(text(), "+ Add Amenity")]])
+14:48:10.552 INFO - Done: [find element: By.xpath: //button[contains(text(), "+ Add Amenity")]]
+14:48:10.555 INFO - Executing: [click: 89 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "+ Add Amenity")]]])
+14:48:10.618 INFO - Done: [click: 89 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "+ Add Amenity")]]]
+14:48:10.629 INFO - Executing: [find elements: By.xpath: //button[contains(text(), "Save listing")]])
+14:48:10.659 INFO - Done: [find elements: By.xpath: //button[contains(text(), "Save listing")]]
+14:48:10.665 INFO - Executing: [is enabled: 25 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Save listing")]]])
+14:48:10.683 INFO - Done: [is enabled: 25 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Save listing")]]]
+14:48:10.691 INFO - Executing: [find element: By.xpath: //button[contains(text(), "Save listing")]])
+14:48:10.725 INFO - Done: [find element: By.xpath: //button[contains(text(), "Save listing")]]
+14:48:10.730 INFO - Executing: [click: 25 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Save listing")]]])
+14:48:10.785 INFO - Done: [click: 25 [[ChromeDriver: chrome on MAC (a666a1292351e04f79acb0fdb86ceb3c)] -> xpath: //button[contains(text(), "Save listing")]]]
