@@ -5,7 +5,7 @@ module.exports = {
     welcomeToHotPadsRentalManager: { selector: '//h1[contains(text(), "Welcome to hotpads Rental Manager")]', locateStrategy: 'xpath' },
     postToHotPads: { selector: '//a[contains(text(), "Post to ")]', locateStrategy: 'xpath' },
     myListings: { selector: '//a[contains(text(), "My listings")]', locateStrategy: 'xpath' },
-    backToHotPads: { selector: '//a[contains(text(), "Back to ")]', locateStrategy: 'xpath' },
+    backToHotPads: { selector: '//a[contains(text(), "Back to HotPads")]', locateStrategy: 'xpath' },
     emailNav: { selector: '//a[contains(text(), "v-kevinwo@hotpads.com")]', locateStrategy: 'xpath' },
 
     // --- Select your listing type: ---
@@ -22,8 +22,8 @@ module.exports = {
     selectYourPropertyTypeCopy: { selector: '//div[contains(text(), "Select your property type:")]', locateStrategy: 'xpath' },
     house: { selector: '//button[contains(text(), "House")]', locateStrategy: 'xpath' },
     townhouse: { selector: '//button[contains(text(), "Townhouse")]', locateStrategy: 'xpath' },
-    condo: { selector: '//button[contains(text(), "Condo / Apartment Unit")]', locateStrategy: 'xpath' },
-    apartment: { selector: '//button[contains(text(), "Apartment Community")]', locateStrategy: 'xpath' },
+    condoApartment: { selector: '//button[contains(text(), "Condo / Apartment Unit")]', locateStrategy: 'xpath' },
+    apartmentCommunity: { selector: '//button[contains(text(), "Apartment Community")]', locateStrategy: 'xpath' },
     goBackLink: { selector: '//a[contains(text(), "< Go Back")]', locateStrategy: 'xpath' },
     numberOfUnits: { selector: 'input[name=numberUnits]', locateStrategy: 'css' },
     totalUnitsCopy: { selector: '//div[contains(text(), "Total number of units in this apartment community?")]', locateStrategy: 'xpath' },
@@ -31,13 +31,18 @@ module.exports = {
     continueButton: { selector: '//button[contains(text(), "Continue")]', locateStrategy: 'xpath' },
 
     // --- Titles ---
+    forRentHouseTitle: { selector: '//h1[contains(text(), "For rent: house")]', locateStrategy: 'xpath' },
     forRentTownhouseTitle: { selector: '//h1[contains(text(), "For rent: townhouse")]', locateStrategy: 'xpath' },
-    forRentApartmentTitle: { selector: '//h1[contains(text(), "For rent: apartment community")]', locateStrategy: 'xpath' },
+    forRentCondoApartmentTitle: { selector: '//h1[contains(text(), "For rent: apartment")]', locateStrategy: 'xpath' },
+    forRentApartmentCommunityTitle: { selector: '//h1[contains(text(), "For rent: apartment community")]', locateStrategy: 'xpath' },
     roomForRentHouseTitle: { selector: '//h1[contains(text(), "Room for rent: house")]', locateStrategy: 'xpath' },
+    roomForRentTownhouseTitle: { selector: '//h1[contains(text(), "Room for rent: townhouse")]', locateStrategy: 'xpath' },
+    roomForRentCondoApartmentTitle: { selector: '//h1[contains(text(), "Room for rent: condo")]', locateStrategy: 'xpath' },
 
     // --- Left-nav menu ---
 
     locationNav: { selector: '//a[contains(text(), "Location")]', locateStrategy: 'xpath' },
+    detailsAndDescriptionNav: { selector: '//a[contains(text(), "Details and Description")]', locateStrategy: 'xpath' },
     buildingDetailsNav: { selector: '//a[contains(text(), "Building Details")]', locateStrategy: 'xpath' },
     buildingPhotosNav: { selector: '//a[contains(text(), "Building Photos")]', locateStrategy: 'xpath' },
     communityAmenitiesNav: { selector: '//a[contains(text(), "Community Amenities")]', locateStrategy: 'xpath' },
@@ -51,9 +56,11 @@ module.exports = {
     // --- Location ---
 
     street: { selector: 'input[name=street]', locateStrategy: 'css' },
+    unitNumber: { selector: 'input[name=unit]', locateStrategy: 'css' },
     city: { selector: 'input[name=city]', locateStrategy: 'css' },
     state: { selector: 'select[name=state]', locateStrategy: 'css' },
     zip: { selector: 'input[name=zip]', locateStrategy: 'css' },
+    hideAddress: { selector: '.checkbox-styled' , locateStrategy: 'css' },
 
     // --- Building details ---
 
@@ -77,6 +84,7 @@ module.exports = {
     beds: { selector: 'select[name=beds]', locateStrategy: 'css' },
     baths: { selector: 'input[name=baths]', locateStrategy: 'css' },
     price: { selector: 'input[name=price]', locateStrategy: 'css' },
+    sqft: { selector: 'input[name=sqft]', locateStrategy: 'css' },
     expandAllFloorplans: { selector: '//a[contains(text(), "Expand All Floorplans")]', locateStrategy: 'xpath' },
     expandFloorplanPhotos: { selector: '//div[contains(text(), "Floorplan Photos")]', locateStrategy: 'xpath' },
     floorplanLayoutButton: { selector: '//span[contains(text(), "Layout / Floorplan")]', locateStrategy: 'xpath' },
@@ -92,6 +100,7 @@ module.exports = {
     // --- Building photos ---
 
     photos: { selector: 'input[type=file]', locateStrategy: 'css' },
+    photoCaption: { selector: 'input[name=caption]', locateStrategy: 'css' },
 
     // --- Community amenities and rules | Amenities ---
 
@@ -109,7 +118,7 @@ module.exports = {
     laundryHeader: { selector: '//div[contains(text(), "Laundry")]', locateStrategy: 'xpath' },
     none: { selector: '//span[contains(text(), "None")]', locateStrategy: 'xpath' },
     inUnit: { selector: '//span[contains(text(), "In unit")]', locateStrategy: 'xpath' },
-    shared: { selector: '//span[contains(text(), "Shared / in-building")]', locateStrategy: 'xpath' },
+    shared: { selector: '//span[contains(text(), "Shared / In-building")]', locateStrategy: 'xpath' },
 
     // --- Community amenities and rules | Pets ---
 
@@ -123,6 +132,7 @@ module.exports = {
 
     additionalAmenities: { selector: 'input[placeholder="List other amenities available"]', locateStrategy: 'css'},
     unitAmenities: { selector: 'input[placeholder="List amenities found in units"]', locateStrategy: 'css'},
+    availSelUnits: { selector: '//span[contains(text(), "Available in select units")]', locateStrategy: 'xpath' },
 
     // --- Buttons ---
 
@@ -165,7 +175,7 @@ module.exports = {
                  .setValue('@state', 'CA')
                  .setValue('@zip', '94502')
     },
-    clearLocation: function() {
+    editLocationAddress: function() {
       return this.clearValue('@street')
                  .setValue('@street', '3026 Alta Vista')
                  .clearValue('@city')
@@ -175,9 +185,16 @@ module.exports = {
                  .clearValue('@zip')
                  .setValue('@zip', '94502')
     },
+    detailsAndDescription: function() {
+      return this.setValue('@price', '7500')
+                 .setValue('@beds', '3')
+                 .setValue('@baths', '2.5')
+                 .setValue('@leaseTerms', 'Month-to-month')
+                 .setValue('@propertyDescription', 'Post property description')
+    },
     buildingDetails: function() {
-      return this.setValue('@listingTitle', 'Test listing title')
-                 .setValue('@propertyDescription', 'This is an awesome place!')
+      return this.setValue('@listingTitle', 'Post listing title')
+                 .setValue('@propertyDescription', 'Post property description')
                  .setValue('@leaseTerms', 'Month-to-month')
                  .setValue('@websiteUrl', 'hotpads.com')
                  .setValue('@sundayHours', '10-6p')
@@ -188,11 +205,32 @@ module.exports = {
                  .setValue('@fridayHours', '10-6p')
                  .setValue('@saturdayHours', '10-6p')
     },
+    editBuildingDetails: function() {
+        return this.clearValue('@listingTitle')
+                 .setValue('@listingTitle', 'Edit listing title')
+                 .clearValue('@propertyDescription')
+                 .setValue('@propertyDescription', 'Edit property description')
+                 .clearValue('@leaseTerms')
+                 .setValue('@leaseTerms', 'Annually')
+                 .click('@removeLogoButton')
+                 .clearValue('@websiteUrl')
+                 .setValue('@websiteUrl', 'hotpads.com/rental-manager')
+                 .clearValue('@sundayHours')
+                 .setValue('@sundayHours', '8-6p')
+                 .clearValue('@mondayHours')
+                 .clearValue('@mondayHours')
+                 .clearValue('@tuesdayHours')
+                 .clearValue('@wednesdayHours')
+                 .clearValue('@thursdayHours')
+                 .clearValue('@fridayHours')
+                 .clearValue('@saturdayHours')
+                 .setValue('@saturdayHours', '8-6p')
+    },
     uploadPropertyPhoto: function() {
         return this.setValue('@propertyLogo', require('path').resolve('/Users/kevinwo/Documents/zrm/test_photos/bewaresign.jpeg'))
     },
     floorplanDetails: function() {
-      return this.setValue('@floorplanName', 'Test floorplan name')
+      return this.setValue('@floorplanName', 'Post floorplan name')
                  .setValue('@beds', '3')
                  .setValue('@baths', '2.5')
                  .setValue('@price', '7500')
@@ -205,15 +243,15 @@ module.exports = {
     uploadfloorplanPhotosPhoto: function() {
       return this.setValue('@floorplanLayoutPhotos', require('path').resolve('/Users/kevinwo/Documents/zrm/test_photos/bewaresign.jpeg'))
     },
-    clearDetails: function() {
-      return this.clearValue('@price')
-                 .setValue('@price', '3650')
+    editFloorplanDetails: function() {
+      return this.clearValue('@floorplanName')
+                 .setValue('@floorplanName', 'Edit floorplan name')
                  .clearValue('@beds')
-                 .setValue('@beds', '3')
+                 .setValue('@beds', '4')
                  .clearValue('@baths')
-                 .setValue('@baths', '2.5')
-                 .clearValue('@description')
-                 .setValue('@description', 'This is an awesome!')
+                 .setValue('@baths', '3')
+                 .clearValue('@price')
+                 .setValue('@price', '8000')
     },
     contactInfo: function() {
       return this.setValue('@name', 'QA Test')
@@ -221,17 +259,28 @@ module.exports = {
                  .setValue('@fax', '415-444-4444')
                  .setValue('@cc', 'qa@zrm.com')
     },
-    clearContact: function() {
+    editContactInfo: function() {
       return this.clearValue('@name')
-                 .setValue('@name', 'Tester')
+                 .setValue('@name', 'Test QA')
                  .clearValue('@phone')
-                 .setValue('@phone', '415-444-4444')
+                 .setValue('@phone', '415-666-6666')
+                 .clearValue('@fax')
+                 .setValue('@fax', '415-333-3333')
+                 .clearValue('@cc')
+                 .setValue('@cc', 'zrm@qa.com')
     },
     uploadBuildingPhoto: function() {
       return this.setValue('@photos', require('path').resolve('/Users/kevinwo/Documents/zrm/test_photos/canaima_venezuela.jpg'))
     },
+    photoCaption: function() {
+      return this.setValue('@photoCaption', 'This is the photo caption')
+    },
     addUnitAmenities: function() {
       return this.setValue('@unitAmenities', 'testing')
+                 .click('@addAmenityButton')
+    },
+    addAdditionalAmenities: function() {
+      return this.setValue('@additionalAmenities', 'testing')
                  .click('@addAmenityButton')
     }
   }]

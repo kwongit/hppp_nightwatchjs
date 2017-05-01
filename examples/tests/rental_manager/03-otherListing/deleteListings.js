@@ -16,16 +16,17 @@ module.exports = {
     var hello = client.page.rental_manager.postAListing();
     hello.click('@myListings');
     client.pause(1000);
+    client.assert.urlContains('http://hotpads.com/listings/myListings');
     });
   },
 
   '[02] - Verify listings found:' : function (client) {
-    client.expect.element('#listing-count').to.be.present;
+    client.waitForElementVisible('#listing-count', 100, false);
     client.pause(1000);
   },
 
   '[03] - Will keep clicking on listings found and delete listing...:' : function (client) {
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 5; i++) {
       var firstListingToBeDeleted = client.page.rental_manager.login();
       firstListingToBeDeleted.click('@listingsFound');
       firstListingToBeDeleted.waitForElementVisible('@deleteListing', 10000, false);

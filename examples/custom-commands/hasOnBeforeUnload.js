@@ -6,13 +6,13 @@
 /* global window */
 
 module.exports.command = function(callback) {
-  var self = this;
+    var self = this;
 
-  this.execute(function() {
-    return window && typeof window.onbeforeunload === 'function';
-  }, [], function(result) {
-    callback.call(self, result.value);
-  });
+    this.execute(function() {
+        return window && typeof window.onbeforeunload === 'function';
+    }, [], function(result) {
+        callback.call(self, result.value);
+    });
 
-  return this;
+    return this;
 };
